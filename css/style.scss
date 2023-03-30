@@ -1,0 +1,59 @@
+﻿@import "common.scss";
+@import "display.scss";
+@charset "UTF-8";
+
+:root {
+  font-size: 16px;
+  --widthWrp: #{ptr(1366)};
+}
+body {
+  color: #343434;
+  font-family: "Sarabun", sans-serif;
+  min-width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  font-size: ptr(14);
+  line-height: ptr(23);
+}
+.wrp {
+  margin: auto;
+  width: var(--widthWrp);
+  max-width: 100%;
+}
+.commonBanner {
+  display: block;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+img {
+  transition: 0.3s all ease-in-out;
+}
+.wImage:hover {
+  > a > img {
+    transform: translateY(-50%) translateX(-50%) scale(1.05);
+  }
+}
+.noidung {
+  padding: 0;
+  a {
+    color: $color-hover2 !important;
+    &:hover {
+      color: $color-hover !important;
+    }
+  }
+}
+.openSub {
+  display: none;
+}
+.openList {
+  display: none;
+}
+.name {
+  &:hover {
+    color: $color-hover;
+  }
+}
