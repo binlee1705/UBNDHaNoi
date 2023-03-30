@@ -1,4 +1,4 @@
-﻿$color-hover: #073d9f;
+﻿$color-hover: #2873aa;
 //function
 @function ptr($px) {
   @return ($px * 0.0625) + rem;
@@ -12,7 +12,7 @@
   transition: 0.3s all ease-in-out;
 }
 
-@function percent($item, $total: 1366) {
+@function percent($item, $total: 1170) {
   @return ($item / $total) * 100%;
 }
 

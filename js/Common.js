@@ -60,15 +60,6 @@ function scrollHead(event) {
     event.preventDefault();
     $('body,html').animate({ scrollTop: 0 }, 1600);
 }
-var checkScroll = false;
-$(window).scroll(function () {
-    var offsetWindow = $(this).scrollTop();
-    if (scrollTop > 400) {
-        $('#bttop').addClass("active");
-    } else {
-        $('#bttop').removeClass("active");
-    }
-});
 $(document).ready(() => {
     $('#bttop').click(function (e) {
         scrollHead(e);
@@ -98,7 +89,7 @@ $(document).ready(() => {
     $('.modal').on('shown.bs.modal', function () {
         $(this).trigger('focus')
     })
-    // $(".marquee").marquee({ duration: 20000, gap: 20, delayBeforeStart: 0, direction: "left", duplicated: true, pauseOnHover: true });
+    $("#marquee").marquee({ duration: 20000, gap: 30, delayBeforeStart: 0, direction: "left", duplicated: true, pauseOnHover: true });
 
     $('#iconService:not(.inside) .group').each(function () {
         $(this).owlCarousel(owlslide($(this).find('>*').size(), [0, 0, 0, 0, 0, 0], false, true, true, [8, 8, 6, 5, 4], "", ""));

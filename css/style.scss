@@ -4,16 +4,16 @@
 
 :root {
   font-size: 16px;
-  --widthWrp: #{ptr(1366)};
+  --widthWrp: #{ptr(1170)};
 }
 body {
-  color: #343434;
-  font-family: "Sarabun", sans-serif;
+  color: #313131;
+  font-family: "Inter", sans-serif;
   min-width: 100%;
   max-width: 100vw;
   min-height: 100vh;
-  font-size: ptr(14);
-  line-height: ptr(23);
+  font-size: ptr(16);
+  line-height: ptr(24);
 }
 .wrp {
   margin: auto;
@@ -32,15 +32,9 @@ body {
 img {
   transition: 0.3s all ease-in-out;
 }
-.wImage:hover {
-  > a > img {
-    transform: translateY(-50%) translateX(-50%) scale(1.05);
-  }
-}
 .noidung {
   padding: 0;
   a {
-    color: $color-hover2 !important;
     &:hover {
       color: $color-hover !important;
     }
@@ -55,5 +49,274 @@ img {
 .name {
   &:hover {
     color: $color-hover;
+  }
+}
+.commonTitle {
+  display: flex;
+  justify-content: space-between;
+  min-height: ptr(40);
+  background: #fff;
+  border-left: ptr(8) #2873aa solid;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: ptr(20);
+  line-height: ptr(24);
+  padding: 0 ptr(20);
+  align-items: center;
+  text-transform: uppercase;
+  color: #2873aa;
+  margin-bottom: ptr(7);
+  &:hover {
+    color: #2873aa;
+  }
+  .xtc {
+    font-weight: normal;
+    text-transform: none;
+    font-style: ptr(16);
+    font-style: italic;
+    &:hover {
+      color: #333;
+    }
+  }
+}
+
+header {
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 67, 139, 0.53) 0%,
+      rgba(0, 67, 139, 0) 88.22%
+    );
+    z-index: 5;
+    pointer-events: none;
+  }
+  position: relative;
+  .bgHead {
+    width: 100%;
+    pointer-events: none;
+    &:before {
+      padding-bottom: wImage(409, 1440);
+    }
+  }
+  .wrp {
+    z-index: 6;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        background: linear-gradient(88.33deg, #015ea2 1%, #5db0ec 99.21%);
+        display: flex;
+        justify-content: space-between;
+        padding: ptr(10) ptr(20);
+        border-radius: 0 0 ptr(20) ptr(20);
+        align-items: center;
+        .text {
+          padding-left: ptr(20);
+          display: flex;
+          flex-direction: column;
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: 600;
+          span:first-child {
+            font-size: ptr(22);
+            margin-bottom: ptr(8);
+          }
+          span:last-child {
+          }
+        }
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        #searchForm {
+          display: flex;
+          align-items: center;
+          background: #fff;
+          border-radius: ptr(20);
+          overflow: hidden;
+          width: ptr(336);
+          .inputSearch {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 0 ptr(15);
+            font-size: ptr(14);
+          }
+          .btnSearch {
+            width: ptr(30);
+            height: ptr(30);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+        }
+        .language {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          margin-left: ptr(25);
+          li {
+            position: relative;
+            ul {
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              position: absolute;
+              top: 100%;
+              display: none;
+              li {
+                margin: 3px 0;
+              }
+            }
+            &:hover {
+              > ul {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+    #menu {
+      background: rgba(40, 115, 170, 0.8);
+      border-radius: ptr(20) ptr(20) 0 0;
+      padding: 0 ptr(20);
+      transition: 0.3s all ease-in-out;
+      &:hover {
+        background: #2873aa;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        color: #fff;
+        min-height: ptr(50);
+        li {
+          flex: auto;
+          font-weight: 600;
+          line-height: ptr(19);
+          position: relative;
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            svg {
+              margin-left: ptr(5);
+            }
+            &:hover {
+              color: yellow;
+              > svg path {
+                stroke: yellow;
+              }
+            }
+          }
+          &:hover {
+            > ul {
+              display: block;
+            }
+          }
+          ul {
+            border-top: 2px solid #fff;
+            display: none;
+            position: absolute;
+            top: 100%;
+            background: #2873aa;
+            min-width: ptr(250);
+            li {
+              a {
+                display: block;
+                font-size: ptr(15);
+                padding: ptr(7) ptr(15);
+              }
+            }
+            ul {
+              top: -2px;
+              left: 100%;
+              border-left: 2px solid #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#newsHot {
+  background: url(../pic/bgNewHot.png) center no-repeat, #e9f0fa;
+  background-size: cover;
+  #marquee {
+    margin-bottom: ptr(20);
+    display: table;
+    width: 100%;
+    a:hover {
+      color: $color-hover;
+    }
+  }
+  .wrp {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      width: percent(770);
+      .main {
+        position: relative;
+        .wImage {
+          &::before {
+            padding-bottom: wImage(353, 770);
+          }
+        }
+        .info {
+          position: absolute;
+          width: 100%;
+          z-index: 5;
+          left: 0;
+          bottom: 0;
+          background: rgba(40, 115, 170, 0.9);
+          transition: 0.3s all ease-in-out;
+          color: #fff;
+          padding: ptr(10) ptr(20);
+          &:hover {
+            background: rgba(40, 115, 170, 1);
+          }
+          .name {
+            font-weight: 700;
+            font-size: ptr(18);
+            line-height: ptr(27);
+            display: block;
+            margin-bottom: ptr(5);
+            &:hover {
+              color: #fff;
+            }
+          }
+          .des {
+            text-align: justify;
+          }
+        }
+      }
+    }
+    .right {
+      width: percent(370);
+    }
   }
 }

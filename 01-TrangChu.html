@@ -9,9 +9,7 @@
     <!--CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link href="bootstrap/bootstrap.css" rel="stylesheet" />
     <link href="css/animate.css" rel="stylesheet" />
@@ -22,12 +20,841 @@
 </head>
 
 <body>
-    <div id="overlay"></div>
+    <header>
+        <div class="wrp">
+            <div class="top">
+                <a href="/" class="logo">
+                    <p class="icon">
+                        <svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M40.0229 0C17.9222 0 0 17.9402 0 40.0629C0 55.8958 9.17324 69.5813 22.4848 76.0875C24.3659 77.0089 26.327 77.7782 28.3602 78.4031V56.3124H51.6775V78.4031C53.7107 77.7862 55.6718 77.0089 57.5529 76.0875C70.8725 69.5813 80.0457 55.8958 80.0457 40.0629C80.0457 17.9402 62.1235 0 40.0229 0ZM69.6718 60.0703C68.3911 61.9693 66.9262 63.7481 65.3013 65.3667C63.6844 66.9852 61.8993 68.4595 60.0103 69.7415C59.2178 70.2784 58.3933 70.7832 57.5609 71.2559V50.4232H51.8456V40.4315H63.5483L71.6889 32.5551L67.6066 28.3245L61.1709 34.5503H45.9702V50.4232H34.0755V34.5583H18.8668L12.4311 28.3325L8.34877 32.5631L16.4894 40.4395H28.1921V50.4312H22.4768V71.2639C21.6364 70.7912 20.8199 70.2864 20.0274 69.7495C18.1304 68.4675 16.3533 67.0012 14.7364 65.3747C13.1195 63.7561 11.6467 61.9693 10.3659 60.0784C9.07718 58.1633 7.96455 56.1201 7.06804 54.0048C5.20297 49.5979 4.25843 44.9105 4.25843 40.0789C4.25843 35.2474 5.20297 30.56 7.06804 26.1531C7.96455 24.0297 9.06918 21.9865 10.3659 20.0795C11.6467 18.1806 13.1115 16.4018 14.7364 14.7832C16.3533 13.1647 18.1384 11.6904 20.0274 10.4083C21.9405 9.11832 23.9817 8.00457 26.0949 7.10716C30.4974 5.24023 35.1801 4.29475 40.0068 4.29475C44.8336 4.29475 49.5163 5.24023 53.9188 7.10716C56.04 8.00457 58.0812 9.11031 59.9863 10.4083C61.8833 11.6904 63.6604 13.1567 65.2773 14.7832C66.8942 16.4018 68.367 18.1886 69.6478 20.0795C70.9365 21.9945 72.0491 24.0378 72.9457 26.1531C74.8107 30.56 75.7553 35.2474 75.7553 40.0789C75.7553 44.9105 74.8107 49.5979 72.9457 54.0048C72.0732 56.1121 70.9605 58.1553 69.6718 60.0703Z"
+                                fill="white" />
+                            <path
+                                d="M65.5413 26.4975L60.2023 31.8739H19.8432L14.5042 26.4975L18.2023 22.6675L22.3086 26.6738H40.0227H57.7368L61.8432 22.6675L65.5413 26.4975Z"
+                                fill="white" />
+                            <path
+                                d="M54.3191 23.2444H48.1396L47.5793 21.089H32.4667L31.9063 23.2444H25.7268L29.3689 13.8777H34.3557L34.0115 15.2078H46.0344L45.6902 13.8777H50.6771L54.3191 23.2444Z"
+                                fill="white" />
+                            <path
+                                d="M32.907 71.6084V78.4031H31.162V75.6387H30.5297V78.4031H28.7847V71.6084H30.5297V74.2365H31.162V71.6084H32.907Z"
+                                fill="white" />
+                            <path
+                                d="M44.0974 71.6084V78.4031H42.5445L42.3444 77.6899L41.9442 76.2236V78.4031H40.1912V71.6084H41.4719L41.9442 72.9225L42.3444 74.0442V71.6084H44.0974Z"
+                                fill="white" />
+                            <path
+                                d="M46.8989 71.6084H46.3706C45.354 71.6084 44.5295 72.4337 44.5295 73.4513V76.5602C44.5295 77.5778 45.354 78.4031 46.3706 78.4031H46.8989C47.9155 78.4031 48.7399 77.5778 48.7399 76.5602V73.4513C48.7399 72.4337 47.9155 71.6084 46.8989 71.6084ZM46.9469 77.1932H46.3146V72.8103H46.9469V77.1932Z"
+                                fill="white" />
+                            <path d="M50.8929 71.6084H49.1479V78.4031H50.8929V71.6084Z" fill="white" />
+                            <path d="M34.5239 70.2385H35.9087L36.7572 71.4324H35.6686L34.5239 70.2385Z" fill="white" />
+                            <path
+                                d="M38.1187 78.4031L37.1021 71.6084H34.3806L33.364 78.4031H35.3491V77.2332H36.1256V78.4031H38.1187ZM35.9495 76.0394H35.5252V74.6051H35.9495V76.0394Z"
+                                fill="white" />
+                            <path d="M47.3319 78.6597H45.9465V80.045H47.3319V78.6597Z" fill="white" />
+                            <path
+                                d="M48.396 71.4084H47.0913C47.0913 71.152 46.8832 70.9516 46.635 70.9516C46.3789 70.9516 46.1788 71.16 46.1788 71.4084H44.874L45.9947 70.2385H47.2674L48.396 71.4084Z"
+                                fill="white" />
+                        </svg>
+                    </p>
+                    <p class="text">
+                        <span>Trang thông tin điện tử</span>
+                        <span>Văn phòng UBND thành phố Hà Nội</span>
+                    </p>
+                </a>
+                <div class="right">
+                    <div id="searchForm">
+                        <input type="text" class="inputSearch" placeholder="Nhập từ khoá tìm kiếm...">
+                        <a href="#" title="" class="btnSearch">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.66671 13.9999C11.1645 13.9999 14 11.1644 14 7.66659C14 4.16878 11.1645 1.33325 7.66671 1.33325C4.1689 1.33325 1.33337 4.16878 1.33337 7.66659C1.33337 11.1644 4.1689 13.9999 7.66671 13.9999Z"
+                                    stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <ul class="language">
+                        <li>
+                            <a href="" title="">
+                                <img src="./css/icon/languageVN.png" alt="">
+                            </a>
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.2496 0.363491C13.0154 0.130677 12.6986 0 12.3684 0C12.0381 0 11.7213 0.130677 11.4871 0.363491L6.99963 4.78849L2.57463 0.363491C2.34043 0.130677 2.02361 0 1.69338 0C1.36315 0 1.04633 0.130677 0.812131 0.363491C0.69497 0.479694 0.601977 0.617946 0.538516 0.77027C0.475055 0.922594 0.442383 1.08598 0.442383 1.25099C0.442383 1.41601 0.475055 1.57939 0.538516 1.73171C0.601977 1.88404 0.69497 2.02229 0.812131 2.13849L6.11213 7.43849C6.22833 7.55565 6.36659 7.64864 6.51891 7.7121C6.67123 7.77557 6.83462 7.80824 6.99963 7.80824C7.16465 7.80824 7.32803 7.77557 7.48035 7.7121C7.63268 7.64864 7.77093 7.55565 7.88713 7.43849L13.2496 2.13849C13.3668 2.02229 13.4598 1.88404 13.5232 1.73171C13.5867 1.57939 13.6194 1.41601 13.6194 1.25099C13.6194 1.08598 13.5867 0.922594 13.5232 0.77027C13.4598 0.617946 13.3668 0.479694 13.2496 0.363491Z"
+                                    fill="white" />
+                            </svg>
+                            <ul>
+                                <li>
+                                    <a href="" title="">
+                                        <img src="./css/icon/languageVN.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" title="">
+                                        <img src="./css/icon/languageVN.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#" title="">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.275 3.54996L4.5375 8.79996C3.4125 9.67496 2.5 11.5375 2.5 12.95V22.2125C2.5 25.1125 4.8625 27.4875 7.7625 27.4875H22.2375C25.1375 27.4875 27.5 25.1125 27.5 22.225V13.125C27.5 11.6125 26.4875 9.67496 25.25 8.81246L17.525 3.39996C15.775 2.17496 12.9625 2.23746 11.275 3.54996Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M15 22.4875V18.7375" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a></li>
+                    <li><a href="#" title="">
+                            Giới thiệu
+                        </a></li>
+                    <li><a href="#" title="">
+                            Tin tức
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.2496 0.363491C13.0154 0.130677 12.6986 0 12.3684 0C12.0381 0 11.7213 0.130677 11.4871 0.363491L6.99963 4.78849L2.57463 0.363491C2.34043 0.130677 2.02361 0 1.69338 0C1.36315 0 1.04633 0.130677 0.812131 0.363491C0.69497 0.479694 0.601977 0.617946 0.538516 0.77027C0.475055 0.922594 0.442383 1.08598 0.442383 1.25099C0.442383 1.41601 0.475055 1.57939 0.538516 1.73171C0.601977 1.88404 0.69497 2.02229 0.812131 2.13849L6.11213 7.43849C6.22833 7.55565 6.36659 7.64864 6.51891 7.7121C6.67123 7.77557 6.83462 7.80824 6.99963 7.80824C7.16465 7.80824 7.32803 7.77557 7.48035 7.7121C7.63268 7.64864 7.77093 7.55565 7.88713 7.43849L13.2496 2.13849C13.3668 2.02229 13.4598 1.88404 13.5232 1.73171C13.5867 1.57939 13.6194 1.41601 13.6194 1.25099C13.6194 1.08598 13.5867 0.922594 13.5232 0.77027C13.4598 0.617946 13.3668 0.479694 13.2496 0.363491Z"
+                                    fill="white"></path>
+                            </svg>
+                        </a>
+                        <ul>
+                            <li><a href="#" title="">
+                                    Nghiệp vụ văn phòng
+                                </a>
+                                <ul>
+                                    <li><a href="#" title="">
+                                            Nghiệp vụ văn phòng
+                                        </a></li>
+                                    <li><a href="#" title="">
+                                            Hoạt động Đảng - Đoàn thể
+                                        </a></li>
+                                    <li><a href="#" title="">
+                                            Văn bản tài liệu
+                                        </a></li>
+                                    <li><a href="#" title="">
+                                            Kỷ yếu
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" title="">
+                                    Hoạt động Đảng - Đoàn thể
+                                </a></li>
+                            <li><a href="#" title="">
+                                    Văn bản tài liệu
+                                </a></li>
+                            <li><a href="#" title="">
+                                    Kỷ yếu
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="">
+                            Nghiệp vụ văn phòng
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.2496 0.363491C13.0154 0.130677 12.6986 0 12.3684 0C12.0381 0 11.7213 0.130677 11.4871 0.363491L6.99963 4.78849L2.57463 0.363491C2.34043 0.130677 2.02361 0 1.69338 0C1.36315 0 1.04633 0.130677 0.812131 0.363491C0.69497 0.479694 0.601977 0.617946 0.538516 0.77027C0.475055 0.922594 0.442383 1.08598 0.442383 1.25099C0.442383 1.41601 0.475055 1.57939 0.538516 1.73171C0.601977 1.88404 0.69497 2.02229 0.812131 2.13849L6.11213 7.43849C6.22833 7.55565 6.36659 7.64864 6.51891 7.7121C6.67123 7.77557 6.83462 7.80824 6.99963 7.80824C7.16465 7.80824 7.32803 7.77557 7.48035 7.7121C7.63268 7.64864 7.77093 7.55565 7.88713 7.43849L13.2496 2.13849C13.3668 2.02229 13.4598 1.88404 13.5232 1.73171C13.5867 1.57939 13.6194 1.41601 13.6194 1.25099C13.6194 1.08598 13.5867 0.922594 13.5232 0.77027C13.4598 0.617946 13.3668 0.479694 13.2496 0.363491Z"
+                                    fill="white"></path>
+                            </svg>
+                        </a>
+                        <ul>
+                            <li><a href="#" title="">
+                                    Nghiệp vụ văn phòng
+                                </a></li>
+                            <li><a href="#" title="">
+                                    Hoạt động Đảng - Đoàn thể
+                                </a></li>
+                            <li><a href="#" title="">
+                                    Văn bản tài liệu
+                                </a></li>
+                            <li><a href="#" title="">
+                                    Kỷ yếu
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="">
+                            Hoạt động Đảng - Đoàn thể
+                        </a>
+                    </li>
+                    <li><a href="#" title="">
+                            Văn bản tài liệu
+                        </a></li>
+                    <li><a href="#" title="">
+                            Kỷ yếu
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="wImage bgHead">
+            <a href="" title="" class="image cover">
+                <img src="./pic/bgHead.png" loading="lazy" alt="">
+            </a>
+        </div>
+    </header>
+    <div id="newsHot">
+        <div id="marquee">
+            <a href="#" title="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 7V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V7C3 4 4.5 2 8 2H16C19.5 2 21 4 21 7Z"
+                        stroke="#313131" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M14.5 4.5V6.5C14.5 7.6 15.4 8.5 16.5 8.5H18.5" stroke="#313131" stroke-width="1.5"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8 13H12" stroke="#313131" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M8 17H16" stroke="#313131" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span>Chủ tịch HĐND Thành phố Nguyễn Ngọc Tuấn tiếp Đoàn đại biểu Quốc hội nước CHDCND Lào</span>
+            </a>
+            <a href="#" title="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 7V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V7C3 4 4.5 2 8 2H16C19.5 2 21 4 21 7Z"
+                        stroke="#313131" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M14.5 4.5V6.5C14.5 7.6 15.4 8.5 16.5 8.5H18.5" stroke="#313131" stroke-width="1.5"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8 13H12" stroke="#313131" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M8 17H16" stroke="#313131" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span>Chủ tịch HĐND Thành phố Nguyễn Ngọc Tuấn tiếp Đoàn đại biểu Quốc hội nước CHDCND Lào</span>
+            </a>
+            <a href="#" title="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 7V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V7C3 4 4.5 2 8 2H16C19.5 2 21 4 21 7Z"
+                        stroke="#313131" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M14.5 4.5V6.5C14.5 7.6 15.4 8.5 16.5 8.5H18.5" stroke="#313131" stroke-width="1.5"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8 13H12" stroke="#313131" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M8 17H16" stroke="#313131" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span>Chủ tịch HĐND Thành phố Nguyễn Ngọc Tuấn tiếp Đoàn đại biểu Quốc hội nước CHDCND Lào</span>
+            </a>
+            <a href="#" title="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 7V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V7C3 4 4.5 2 8 2H16C19.5 2 21 4 21 7Z"
+                        stroke="#313131" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M14.5 4.5V6.5C14.5 7.6 15.4 8.5 16.5 8.5H18.5" stroke="#313131" stroke-width="1.5"
+                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8 13H12" stroke="#313131" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M8 17H16" stroke="#313131" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span>Chủ tịch HĐND Thành phố Nguyễn Ngọc Tuấn tiếp Đoàn đại biểu Quốc hội nước CHDCND Lào</span>
+            </a>
+        </div>
+        <div class="wrp">
+            <div class="left">
+                <a href="#" title="" class="commonTitle">
+                    TIN NỔI BẬT
+                    <span class="xtc">Xem tất cả</span>
+                </a>
+                <div class="group">
+                    <div class="main">
+                        <div class="wImage">
+                            <a href="" title="" class="image cover">
+                                <img src="./pic/p1.png" loading="lazy" alt="">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <a href="#" title="" class="name">Chủ tịch HĐND Thành phố Nguyễn Ngọc Tuấn tiếp Đoàn đại
+                                biểu Quốc hội nước CHDCND Lào
+                            </a>
+                            <p class="des">
+                                HNP - Sáng 27/2, đồng chí Nguyễn Ngọc Tuấn, Phó Bí thư Thành ủy, Chủ tịch HĐND ...
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="list">
+                        <li>
+                            <a href="" title="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21 7V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V7C3 4 4.5 2 8 2H16C19.5 2 21 4 21 7Z"
+                                        stroke="#313131" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.5 4.5V6.5C14.5 7.6 15.4 8.5 16.5 8.5H18.5" stroke="#313131"
+                                        stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M8 13H12" stroke="#313131" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M8 17H16" stroke="#313131" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>Hội thảo khoa học cấp Quốc gia 80 năm Đề cương về văn hóa Việt Nam - Khởi
+                                    nguồn và động lực phát triển
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" title="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21 7V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V7C3 4 4.5 2 8 2H16C19.5 2 21 4 21 7Z"
+                                        stroke="#313131" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.5 4.5V6.5C14.5 7.6 15.4 8.5 16.5 8.5H18.5" stroke="#313131"
+                                        stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M8 13H12" stroke="#313131" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M8 17H16" stroke="#313131" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span>Hội thảo khoa học cấp Quốc gia 80 năm Đề cương về văn hóa Việt Nam - Khởi
+                                    nguồn và động lực phát triển
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <a href="#" title="" class="commonTitle">
+                    THÔNG TIN NGƯỜI PHÁT NGÔN
+                </a>
+                <div class="main">
+                    <div class="wImage">
+                        <a href="" title="" class="image cover">
+                            <img src="./pic/p2.png" loading="lazy" alt="">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <p>Chánh Văn phòng UBND thành phố Hà Nội</p>
+                        <p><b>Trương Việt Dũng</b></p>
+                    </div>
+                </div>
+                <div class="info">
+                    <a href="mailto:truongvietdung_vpubtp@hanoi.gov.vn" title="">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17 4.1427H5.00002C4.31803 4.1427 3.66398 4.41362 3.18174 4.89585C2.69951 5.37809 2.42859 6.03214 2.42859 6.71413V15.2856C2.42859 15.9675 2.69951 16.6216 3.18174 17.1038C3.66398 17.5861 4.31803 17.857 5.00002 17.857H17C17.682 17.857 18.3361 17.5861 18.8183 17.1038C19.3005 16.6216 19.5714 15.9675 19.5714 15.2856V6.71413C19.5714 6.03214 19.3005 5.37809 18.8183 4.89585C18.3361 4.41362 17.682 4.1427 17 4.1427ZM5.00002 5.85699H17C17.2273 5.85699 17.4454 5.94729 17.6061 6.10804C17.7669 6.26878 17.8572 6.4868 17.8572 6.71413L11 10.897L4.14287 6.71413C4.14287 6.4868 4.23318 6.26878 4.39393 6.10804C4.55467 5.94729 4.77269 5.85699 5.00002 5.85699ZM17.8572 15.2856C17.8572 15.5129 17.7669 15.7309 17.6061 15.8916C17.4454 16.0524 17.2273 16.1427 17 16.1427H5.00002C4.77269 16.1427 4.55467 16.0524 4.39393 15.8916C4.23318 15.7309 4.14287 15.5129 4.14287 15.2856V8.66841L10.5543 12.5856C10.6846 12.6608 10.8324 12.7004 10.9829 12.7004C11.1333 12.7004 11.2811 12.6608 11.4114 12.5856L17.8572 8.66841V15.2856Z"
+                                fill="#2873AA" />
+                        </svg>
+                        <span>truongvietdung_vpubtp@hanoi.gov.vn</span>
+                    </a>
+                    <a href="tel:0983.588.885" title="">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.3774 11.857C17.1888 11.857 16.9916 11.797 16.8031 11.7541C16.4212 11.67 16.0459 11.5582 15.6802 11.4198C15.2826 11.2752 14.8455 11.2827 14.453 11.4409C14.0606 11.5991 13.7406 11.8969 13.5545 12.277L13.3659 12.6627C12.5311 12.1983 11.7639 11.6214 11.0859 10.9484C10.4129 10.2704 9.83606 9.50324 9.37164 8.66839L9.73164 8.42839C10.1117 8.24232 10.4095 7.92227 10.5677 7.52984C10.7259 7.1374 10.7334 6.70031 10.5888 6.30267C10.4527 5.93618 10.341 5.56107 10.2545 5.17982C10.2116 4.99125 10.1774 4.7941 10.1516 4.59696C10.0475 3.99321 9.73132 3.44645 9.25988 3.05517C8.78845 2.66388 8.1928 2.45377 7.58021 2.46267H5.00878C4.63938 2.45921 4.27357 2.53537 3.93625 2.68599C3.59893 2.8366 3.29802 3.05813 3.05401 3.33549C2.80999 3.61285 2.62861 3.93953 2.5222 4.29329C2.41579 4.64705 2.38685 5.01958 2.43735 5.38553C2.89398 8.97643 4.53395 12.3129 7.0982 14.8678C9.66244 17.4227 13.0048 19.0505 16.5974 19.4941H16.9231C17.5551 19.495 18.1654 19.2631 18.6374 18.8427C18.9085 18.6001 19.1251 18.3028 19.2729 17.9704C19.4207 17.6379 19.4962 17.2779 19.4945 16.9141V14.3427C19.484 13.7473 19.2672 13.174 18.8811 12.7207C18.495 12.2673 17.9635 11.9621 17.3774 11.857ZM17.8059 16.9998C17.8058 17.1215 17.7797 17.2418 17.7295 17.3526C17.6792 17.4635 17.6059 17.5624 17.5145 17.6427C17.419 17.7258 17.307 17.7879 17.1859 17.8248C17.0648 17.8617 16.9373 17.8727 16.8116 17.857C13.6016 17.4454 10.6198 15.9768 8.33682 13.6829C6.05381 11.389 4.59942 8.40039 4.20307 5.18839C4.18942 5.06283 4.20138 4.93581 4.23821 4.81501C4.27504 4.6942 4.33598 4.58212 4.41735 4.48553C4.49767 4.3941 4.59655 4.32082 4.70739 4.27057C4.81823 4.22033 4.93851 4.19426 5.06021 4.1941H7.63164C7.83096 4.18967 8.0256 4.25486 8.18205 4.37845C8.33849 4.50204 8.44696 4.67631 8.48878 4.87125C8.52307 5.10553 8.56592 5.33696 8.61735 5.56553C8.71637 6.01737 8.84815 6.4614 9.01164 6.8941L7.81164 7.45125C7.70903 7.49832 7.61674 7.5652 7.54006 7.64804C7.46337 7.73088 7.40381 7.82806 7.36478 7.93398C7.32576 8.03991 7.30804 8.1525 7.31265 8.26529C7.31726 8.37809 7.3441 8.48886 7.39164 8.59125C8.62524 11.2336 10.7493 13.3576 13.3916 14.5912C13.6003 14.677 13.8344 14.677 14.0431 14.5912C14.15 14.553 14.2482 14.4939 14.3321 14.4174C14.4159 14.3409 14.4838 14.2485 14.5316 14.1455L15.0631 12.9455C15.5062 13.104 15.9584 13.2357 16.4174 13.3398C16.6459 13.3912 16.8774 13.4341 17.1116 13.4684C17.3066 13.5102 17.4808 13.6187 17.6044 13.7751C17.728 13.9316 17.7932 14.1262 17.7888 14.3255L17.8059 16.9998Z"
+                                fill="#2873AA" />
+                        </svg>
+                        <span>0983.588.885</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" title="" class="commonBanner">
+        <img src="./pic/p3.png" alt="" loading="lazy">
+    </a>
+    <div id="containHome">
+        <div class="wrp">
+            <div class="colLeft">
+                <div class="bannerTop">
+                    <a href="#" title="" class="commonBanner">
+                        <img src="./pic/p4.png" alt="" loading="lazy">
+                    </a>
+                    <a href="#" title="" class="commonBanner">
+                        <img src="./pic/p5.png" alt="" loading="lazy">
+                    </a>
+                </div>
+                <div id="newsHome">
+                    <div class="parent">
+                        <a href="#" title="" class="commonTitle">
+                            CHỈ ĐẠO ĐIỀU HÀNH CỦA UBND THÀNH PHỐ
+                            <span class="xtc">
+                                Xem tất cả
+                            </span>
+                        </a>
+                        <div class="group">
+                            <div class="main">
+                                <div class="wImage">
+                                    <a href="" title="" class="image cover">
+                                        <img src="./pic/p6.png" loading="lazy" alt="">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <a href="#" title="" class="name">
+                                        Cụ thể hóa các chỉ tiêu Chương trình số 06-CTr/TU thực hiện trong năm 2023
+                                    </a>
+                                    <div class="des">
+                                        HNP - Ngày 23/2, Ban Tuyên giáo Thành ủy Hà Nội ban hành Hướng dẫn số
+                                        91-HD/BTGTU về tuyên truyền bảo đảm trật tự, an toàn giao thông trên địa bàn
+                                        thành phố Hà Nội, năm 2023. Theo đó, công tác tuyên truyền thực hiện Luật Giao
+                                        thông đường bộ sửa đổi, bổ sung; các văn bản pháp luật quy định về trật tự an
+                                        toàn giao thông của Trung ương và thành phố Hà Nội
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="item">
+                                <span class="date">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.66675 1.66669V4.16669" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3333 1.66669V4.16669" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2.91675 7.57501H17.0834" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M17.5 7.08335V14.1667C17.5 16.6667 16.25 18.3334 13.3333 18.3334H6.66667C3.75 18.3334 2.5 16.6667 2.5 14.1667V7.08335C2.5 4.58335 3.75 2.91669 6.66667 2.91669H13.3333C16.25 2.91669 17.5 4.58335 17.5 7.08335Z"
+                                            stroke="#2873AA" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.0788 11.4167H13.0863" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.0788 13.9167H13.0863" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.99634 11.4167H10.0038" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.99632 13.9167H10.0038" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.91185 11.4167H6.91933" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.91185 13.9167H6.91933" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    14:12 27/02/2023
+                                </span>
+                                <span class="name">
+                                    Hội thảo khoa học cấp Quốc gia 80 năm Đề cương về văn hóa Việt Nam - Khởi
+                                    nguồn và động lực phát triển
+                                </span>
+                            </a>
+                            <a href="#" class="item">
+                                <span class="date">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.66675 1.66669V4.16669" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3333 1.66669V4.16669" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2.91675 7.57501H17.0834" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M17.5 7.08335V14.1667C17.5 16.6667 16.25 18.3334 13.3333 18.3334H6.66667C3.75 18.3334 2.5 16.6667 2.5 14.1667V7.08335C2.5 4.58335 3.75 2.91669 6.66667 2.91669H13.3333C16.25 2.91669 17.5 4.58335 17.5 7.08335Z"
+                                            stroke="#2873AA" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.0788 11.4167H13.0863" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.0788 13.9167H13.0863" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.99634 11.4167H10.0038" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.99632 13.9167H10.0038" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.91185 11.4167H6.91933" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.91185 13.9167H6.91933" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    14:12 27/02/2023
+                                </span>
+                                <span class="name">
+                                    Hội thảo khoa học cấp Quốc gia 80 năm Đề cương về văn hóa Việt Nam - Khởi
+                                    nguồn và động lực phát triển
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="parent">
+                        <a href="#" title="" class="commonTitle">
+                            CHỈ ĐẠO ĐIỀU HÀNH CỦA UBND THÀNH PHỐ
+                            <span class="xtc">
+                                Xem tất cả
+                            </span>
+                        </a>
+                        <div class="group">
+                            <div class="main">
+                                <div class="wImage">
+                                    <a href="" title="" class="image cover">
+                                        <img src="./pic/p6.png" loading="lazy" alt="">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <a href="#" title="" class="name">
+                                        Cụ thể hóa các chỉ tiêu Chương trình số 06-CTr/TU thực hiện trong năm 2023
+                                    </a>
+                                    <div class="des">
+                                        HNP - Ngày 23/2, Ban Tuyên giáo Thành ủy Hà Nội ban hành Hướng dẫn số
+                                        91-HD/BTGTU về tuyên truyền bảo đảm trật tự, an toàn giao thông trên địa bàn
+                                        thành phố Hà Nội, năm 2023. Theo đó, công tác tuyên truyền thực hiện Luật Giao
+                                        thông đường bộ sửa đổi, bổ sung; các văn bản pháp luật quy định về trật tự an
+                                        toàn giao thông của Trung ương và thành phố Hà Nội
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="item">
+                                <span class="date">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.66675 1.66669V4.16669" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3333 1.66669V4.16669" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2.91675 7.57501H17.0834" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M17.5 7.08335V14.1667C17.5 16.6667 16.25 18.3334 13.3333 18.3334H6.66667C3.75 18.3334 2.5 16.6667 2.5 14.1667V7.08335C2.5 4.58335 3.75 2.91669 6.66667 2.91669H13.3333C16.25 2.91669 17.5 4.58335 17.5 7.08335Z"
+                                            stroke="#2873AA" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.0788 11.4167H13.0863" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.0788 13.9167H13.0863" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.99634 11.4167H10.0038" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.99632 13.9167H10.0038" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.91185 11.4167H6.91933" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.91185 13.9167H6.91933" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    14:12 27/02/2023
+                                </span>
+                                <span class="name">
+                                    Hội thảo khoa học cấp Quốc gia 80 năm Đề cương về văn hóa Việt Nam - Khởi
+                                    nguồn và động lực phát triển
+                                </span>
+                            </a>
+                            <a href="#" class="item">
+                                <span class="date">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.66675 1.66669V4.16669" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3333 1.66669V4.16669" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2.91675 7.57501H17.0834" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M17.5 7.08335V14.1667C17.5 16.6667 16.25 18.3334 13.3333 18.3334H6.66667C3.75 18.3334 2.5 16.6667 2.5 14.1667V7.08335C2.5 4.58335 3.75 2.91669 6.66667 2.91669H13.3333C16.25 2.91669 17.5 4.58335 17.5 7.08335Z"
+                                            stroke="#2873AA" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.0788 11.4167H13.0863" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.0788 13.9167H13.0863" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.99634 11.4167H10.0038" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.99632 13.9167H10.0038" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.91185 11.4167H6.91933" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.91185 13.9167H6.91933" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    14:12 27/02/2023
+                                </span>
+                                <span class="name">
+                                    Hội thảo khoa học cấp Quốc gia 80 năm Đề cương về văn hóa Việt Nam - Khởi
+                                    nguồn và động lực phát triển
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="parent">
+                        <a href="#" title="" class="commonTitle">
+                            CHỈ ĐẠO ĐIỀU HÀNH CỦA UBND THÀNH PHỐ
+                            <span class="xtc">
+                                Xem tất cả
+                            </span>
+                        </a>
+                        <div class="group">
+                            <div class="main">
+                                <div class="wImage">
+                                    <a href="" title="" class="image cover">
+                                        <img src="./pic/p6.png" loading="lazy" alt="">
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <a href="#" title="" class="name">
+                                        Cụ thể hóa các chỉ tiêu Chương trình số 06-CTr/TU thực hiện trong năm 2023
+                                    </a>
+                                    <div class="des">
+                                        HNP - Ngày 23/2, Ban Tuyên giáo Thành ủy Hà Nội ban hành Hướng dẫn số
+                                        91-HD/BTGTU về tuyên truyền bảo đảm trật tự, an toàn giao thông trên địa bàn
+                                        thành phố Hà Nội, năm 2023. Theo đó, công tác tuyên truyền thực hiện Luật Giao
+                                        thông đường bộ sửa đổi, bổ sung; các văn bản pháp luật quy định về trật tự an
+                                        toàn giao thông của Trung ương và thành phố Hà Nội
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="item">
+                                <span class="date">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.66675 1.66669V4.16669" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3333 1.66669V4.16669" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2.91675 7.57501H17.0834" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M17.5 7.08335V14.1667C17.5 16.6667 16.25 18.3334 13.3333 18.3334H6.66667C3.75 18.3334 2.5 16.6667 2.5 14.1667V7.08335C2.5 4.58335 3.75 2.91669 6.66667 2.91669H13.3333C16.25 2.91669 17.5 4.58335 17.5 7.08335Z"
+                                            stroke="#2873AA" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.0788 11.4167H13.0863" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.0788 13.9167H13.0863" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.99634 11.4167H10.0038" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.99632 13.9167H10.0038" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.91185 11.4167H6.91933" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.91185 13.9167H6.91933" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    14:12 27/02/2023
+                                </span>
+                                <span class="name">
+                                    Hội thảo khoa học cấp Quốc gia 80 năm Đề cương về văn hóa Việt Nam - Khởi
+                                    nguồn và động lực phát triển
+                                </span>
+                            </a>
+                            <a href="#" class="item">
+                                <span class="date">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.66675 1.66669V4.16669" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.3333 1.66669V4.16669" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M2.91675 7.57501H17.0834" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M17.5 7.08335V14.1667C17.5 16.6667 16.25 18.3334 13.3333 18.3334H6.66667C3.75 18.3334 2.5 16.6667 2.5 14.1667V7.08335C2.5 4.58335 3.75 2.91669 6.66667 2.91669H13.3333C16.25 2.91669 17.5 4.58335 17.5 7.08335Z"
+                                            stroke="#2873AA" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.0788 11.4167H13.0863" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13.0788 13.9167H13.0863" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.99634 11.4167H10.0038" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.99632 13.9167H10.0038" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.91185 11.4167H6.91933" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.91185 13.9167H6.91933" stroke="#2873AA" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    14:12 27/02/2023
+                                </span>
+                                <span class="name">
+                                    Hội thảo khoa học cấp Quốc gia 80 năm Đề cương về văn hóa Việt Nam - Khởi
+                                    nguồn và động lực phát triển
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="documentHome">
+                    <div class="parent">
+                        <a href="#" title="" class="commonTitle">
+                            VĂN BẢN - TÀI LIỆU TRUNG ƯƠNG
+                            <span class="xtc">
+                                Xem tất cả
+                            </span>
+                        </a>
+                        <div class="tableDoc">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Văn bản số</th>
+                                        <th>Ngày ban hành</th>
+                                        <th>Trích yếu</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1186/QĐ - UBND</td>
+                                        <td>22/03/2023</td>
+                                        <td>Về việc ban hành Điều lệ, tổ chức và hoạt động của Tổng công ty Du lịch Hà
+                                            Nội</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1186/QĐ - UBND</td>
+                                        <td>22/03/2023</td>
+                                        <td>Về việc ban hành Điều lệ, tổ chức và hoạt động của Tổng công ty Du lịch Hà
+                                            Nội</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1186/QĐ - UBND</td>
+                                        <td>22/03/2023</td>
+                                        <td>Về việc ban hành Điều lệ, tổ chức và hoạt động của Tổng công ty Du lịch Hà
+                                            Nội</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="parent">
+                        <a href="#" title="" class="commonTitle">
+                            VĂN BẢN - TÀI LIỆU TRUNG ƯƠNG
+                            <span class="xtc">
+                                Xem tất cả
+                            </span>
+                        </a>
+                        <div class="tableDoc">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Văn bản số</th>
+                                        <th>Ngày ban hành</th>
+                                        <th>Trích yếu</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1186/QĐ - UBND</td>
+                                        <td>22/03/2023</td>
+                                        <td>Về việc ban hành Điều lệ, tổ chức và hoạt động của Tổng công ty Du lịch Hà
+                                            Nội</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1186/QĐ - UBND</td>
+                                        <td>22/03/2023</td>
+                                        <td>Về việc ban hành Điều lệ, tổ chức và hoạt động của Tổng công ty Du lịch Hà
+                                            Nội</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1186/QĐ - UBND</td>
+                                        <td>22/03/2023</td>
+                                        <td>Về việc ban hành Điều lệ, tổ chức và hoạt động của Tổng công ty Du lịch Hà
+                                            Nội</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="galleryHome">
+                    <a href="#" title="" class="commonTitle">
+                        THƯ VIỆN ẢNH - VIDEO
+                        <span class="xtc">
+                            Xem tất cả
+                        </span>
+                    </a>
+                    <div class="videoHome">
+                        <div class="wImage">
+                            <a href="" title="" class="image cover">
+                                <img src="./pic/p1.png" loading="lazy" alt="">
+                            </a>
+                            <span>Video:Kỳ họp thứ 6 hội đồng nhân dân Thành phố</span>
+                        </div>
+                    </div>
+                    <div class="imageHome">
+                        <div class="group">
+                            <div class="wImage">
+                                <a href="" title="" class="image cover">
+                                    <img src="./pic/p1.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="wImage">
+                                <a href="" title="" class="image cover">
+                                    <img src="./pic/p1.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="wImage">
+                                <a href="" title="" class="image cover">
+                                    <img src="./pic/p1.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                            <div class="wImage">
+                                <a href="" title="" class="image cover">
+                                    <img src="./pic/p1.png" loading="lazy" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="colRight">
+                <div class="videoHome">
+                    <div class="wImage">
+                        <a href="" title="" class="image cover">
+                            <img src="./pic/p1.png" loading="lazy" alt="">
+                        </a>
+                        <span>Video:Kỳ họp thứ 6 hội đồng nhân dân Thành phố</span>
+                    </div>
+                </div>
+                <div id="linkImage">
+                    <a href="#" title="" class="commonTitle">
+                        LIÊN KẾT
+                    </a>
+                    <div class="group">
+                        <a href="#" title="" class="commonBanner">
+                            <img src="./pic/p6.png" loading="lazy" alt="">
+                        </a>
+                        <a href="#" title="" class="commonBanner">
+                            <img src="./pic/p7.png" loading="lazy" alt="">
+                        </a>
+                        <a href="#" title="" class="commonBanner">
+                            <img src="./pic/p8.png" loading="lazy" alt="">
+                        </a>
+                        <a href="#" title="" class="commonBanner">
+                            <img src="./pic/p9.png" loading="lazy" alt="">
+                        </a>
+                        <a href="#" title="" class="commonBanner">
+                            <img src="./pic/p10.png" loading="lazy" alt="">
+                        </a>
+                        <a href="#" title="" class="commonBanner">
+                            <img src="./pic/p11.png" loading="lazy" alt="">
+                        </a>
+                        <a href="#" title="" class="commonBanner">
+                            <img src="./pic/p12.png" loading="lazy" alt="">
+                        </a>
+                        <a href="#" title="" class="commonBanner">
+                            <img src="./pic/p13.png" loading="lazy" alt="">
+                        </a>
+                        <a href="#" title="" class="commonBanner">
+                            <img src="./pic/p14.png" loading="lazy" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div id="map">
+                    <a href="#" title="" class="commonTitle">
+                        BẢN ĐỒ THÀNH PHỐ
+                    </a>
+                    <div class="iFrame">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59587.945831290526!2d105.80194416126042!3d21.022816135306005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1680186711246!5m2!1svi!2s"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+
+    <div id="overlay"></div>
     <!--JS-->
     <script src="./js/jquery-3.6.4.min.js"></script>
     <script src="bootstrap/bootstrap.js"></script>
     <script src="js/Owl2/owl.carousel.min.js"></script>
+    <script src="js/jquery.marquee.min.js"></script>
     <script src="js/Common.js"></script>
 </body>
 
