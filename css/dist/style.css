@@ -1361,6 +1361,7 @@ header .wrp #menu ul li ul ul {
   overflow: hidden;
 }
 #newsHot .marquee a {
+  margin-right: 1.25rem;
   display: inline-block;
 }
 #newsHot .marquee a:hover {
@@ -1654,6 +1655,36 @@ header .wrp #menu ul li ul ul {
 }
 #documentHome.inside .wrp .colRight .parent .pagging {
   margin-bottom: 0;
+}
+#documentHome .detailDoc .tableDetail {
+  margin: 0.625rem 0 1.25rem 0;
+}
+#documentHome .detailDoc .tableDetail .title {
+  background: rgba(30, 47, 65, 0.1);
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 0.9375rem;
+  line-height: 2.5rem;
+}
+#documentHome .detailDoc .tableDetail .content {
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(36, 65, 131, 0.1);
+}
+#documentHome .detailDoc .tableDetail .content .rowDT {
+  padding: 0.625rem 0.9375rem;
+  display: flex;
+  align-items: center;
+}
+#documentHome .detailDoc .tableDetail .content .rowDT .col1 {
+  font-weight: 600;
+  width: 15.3125rem;
+}
+#documentHome .detailDoc .tableDetail .content .rowDT .col2 {
+  font-weight: 500;
+  flex: 1;
+}
+#documentHome .detailDoc .tableDetail .content .rowDT:nth-child(2n) {
+  background: rgba(245, 245, 245, 0.5);
 }
 
 #galleryHome .parent {
