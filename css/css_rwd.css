@@ -74,7 +74,7 @@
     flex-wrap: wrap;
   }
   #header .wrp #menu ul li.active {
-    background: #073d9f !important;
+    background: #2873aa !important;
     color: #fff !important;
   }
   #header .wrp #menu ul li:hover a {
@@ -1029,7 +1029,7 @@
     gap: 0.3125rem;
   }
   #botMobile .btnBanner {
-    background: #073d9f;
+    background: #2873aa;
     flex: 1;
     color: #fff;
     padding: 0.625rem 0.625rem;

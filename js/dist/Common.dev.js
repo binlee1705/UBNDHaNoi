@@ -94,16 +94,17 @@ $(document).ready(function () {
   $('.modal').on('shown.bs.modal', function () {
     $(this).trigger('focus');
   });
-  $("#marquee").marquee({
+  $(".marquee").marquee({
     duration: 20000,
-    gap: 30,
+    gap: 20,
     delayBeforeStart: 0,
     direction: "left",
     duplicated: true,
-    pauseOnHover: true
+    pauseOnHover: true,
+    startVisible: true
   });
-  $('#iconService:not(.inside) .group').each(function () {
-    $(this).owlCarousel(owlslide($(this).find('>*').size(), [0, 0, 0, 0, 0, 0], false, true, true, [8, 8, 6, 5, 4], "", ""));
+  $('#galleryHome .imageHome').each(function () {
+    $(this).owlCarousel(owlslide($(this).find('>*').length, [20, 20, 20, 20, 20, 20], false, true, true, [2, 2, 2, 2, 2], "", ""));
   });
 });
 
