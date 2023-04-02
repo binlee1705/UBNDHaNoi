@@ -65,6 +65,9 @@
     width: 5.625rem;
     height: 5.625rem;
   }
+  header .wrp .top .right .language svg path {
+    fill: #333;
+  }
   header .wrp #menu {
     overflow: auto;
     transform: none !important;

@@ -70,6 +70,13 @@
             }
           }
         }
+        .right {
+          .language {
+            svg path {
+              fill: #333;
+            }
+          }
+        }
       }
       #menu {
         overflow: auto;
