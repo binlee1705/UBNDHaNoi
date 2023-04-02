@@ -88,6 +88,7 @@ img {
   }
 }
 header {
+  z-index: 10;
   &:after {
     content: "";
     width: 100%;
@@ -131,7 +132,6 @@ header {
       .logo {
         // background: linear-gradient(88.33deg, #015ea2 1%, #5db0ec 99.21%);
         display: flex;
-        justify-content: space-between;
         padding: ptr(10) ptr(20);
         border-radius: 0 0 ptr(20) ptr(20);
         align-items: center;
@@ -153,37 +153,11 @@ header {
       .right {
         display: flex;
         align-items: center;
-        #searchForm {
-          display: flex;
-          align-items: center;
-          background: #fff;
-          border-radius: ptr(20);
-          overflow: hidden;
-          width: ptr(336);
-          .inputSearch {
-            flex: 1;
-            border: none;
-            outline: none;
-            padding: 0 ptr(15);
-            font-size: ptr(14);
-          }
-          .btnSearch {
-            width: ptr(30);
-            height: ptr(30);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            svg {
-              max-width: 100%;
-              max-height: 100%;
-            }
-          }
-        }
+        gap: ptr(25);
         .language {
           list-style: none;
           padding: 0;
           margin: 0;
-          margin-left: ptr(25);
           li {
             position: relative;
             ul {
@@ -203,6 +177,32 @@ header {
               }
             }
           }
+        }
+      }
+    }
+    .searchForm {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: ptr(20);
+      overflow: hidden;
+      width: ptr(336);
+      .inputSearch {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 0 ptr(15);
+        font-size: ptr(14);
+      }
+      .btnSearch {
+        width: ptr(30);
+        height: ptr(30);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          max-width: 100%;
+          max-height: 100%;
         }
       }
     }
@@ -430,6 +430,7 @@ header {
         justify-content: space-between;
         gap: ptr(30);
         margin-bottom: ptr(20);
+        flex-wrap: wrap;
         > a {
           width: calc((100% - #{ptr(30)}) / 2);
         }
@@ -470,6 +471,7 @@ header {
         display: flex;
         justify-content: space-between;
         margin-bottom: ptr(25);
+        align-items: flex-start;
         .wImage {
           width: percent(371, 770);
           &:before {
@@ -798,6 +800,7 @@ header {
         border-radius: 8px;
         width: ptr(430);
         display: flex;
+        max-width: 100%;
         overflow: hidden;
         .inputContact {
           flex: 1;

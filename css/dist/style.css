@@ -1182,6 +1182,7 @@ img {
 }
 
 header {
+  z-index: 10;
   position: relative;
 }
 header:after {
@@ -1220,7 +1221,6 @@ header .wrp .top {
 }
 header .wrp .top .logo {
   display: flex;
-  justify-content: space-between;
   padding: 0.625rem 1.25rem;
   border-radius: 0 0 1.25rem 1.25rem;
   align-items: center;
@@ -1240,38 +1240,12 @@ header .wrp .top .logo .text span:first-child {
 header .wrp .top .right {
   display: flex;
   align-items: center;
-}
-header .wrp .top .right #searchForm {
-  display: flex;
-  align-items: center;
-  background: #fff;
-  border-radius: 1.25rem;
-  overflow: hidden;
-  width: 21rem;
-}
-header .wrp .top .right #searchForm .inputSearch {
-  flex: 1;
-  border: none;
-  outline: none;
-  padding: 0 0.9375rem;
-  font-size: 0.875rem;
-}
-header .wrp .top .right #searchForm .btnSearch {
-  width: 1.875rem;
-  height: 1.875rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .wrp .top .right #searchForm .btnSearch svg {
-  max-width: 100%;
-  max-height: 100%;
+  gap: 1.5625rem;
 }
 header .wrp .top .right .language {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-left: 1.5625rem;
 }
 header .wrp .top .right .language li {
   position: relative;
@@ -1289,6 +1263,32 @@ header .wrp .top .right .language li ul li {
 }
 header .wrp .top .right .language li:hover > ul {
   display: block;
+}
+header .wrp .searchForm {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  width: 21rem;
+}
+header .wrp .searchForm .inputSearch {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 0.9375rem;
+  font-size: 0.875rem;
+}
+header .wrp .searchForm .btnSearch {
+  width: 1.875rem;
+  height: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .wrp .searchForm .btnSearch svg {
+  max-width: 100%;
+  max-height: 100%;
 }
 header .wrp #menu {
   background: rgba(40, 115, 170, 0.8);
@@ -1503,6 +1503,7 @@ header .wrp #menu ul li ul ul {
   justify-content: space-between;
   gap: 1.875rem;
   margin-bottom: 1.25rem;
+  flex-wrap: wrap;
 }
 #containHome .wrp .colLeft .bannerTop > a {
   width: calc((100% - 1.875rem) / 2);
@@ -1537,6 +1538,7 @@ header .wrp #menu ul li ul ul {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5625rem;
+  align-items: flex-start;
 }
 #newsHome .parent .group .main .wImage {
   width: 48.1818181818%;
@@ -1843,6 +1845,7 @@ header .wrp #menu ul li ul ul {
   border-radius: 8px;
   width: 26.875rem;
   display: flex;
+  max-width: 100%;
   overflow: hidden;
 }
 #contact.home .content #formContact .inputContact {
