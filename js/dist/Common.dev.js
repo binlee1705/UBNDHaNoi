@@ -139,3 +139,9 @@ function Resetnoidung() {
   $(".noidung").css("cssText", "font-size:" + size + "px !important; line-height:" + lineheight + "px !important");
   $(".noidung").find("*").css("cssText", "font-size:" + size + "px !important; line-height:" + lineheight + "px !important");
 }
+
+function fullSrceenIframe() {
+  if ($(".iframe") && $(".iframe").length > 0) {
+    $(".iframe,body").toggleClass("fullScreen");
+  }
+}
