@@ -4,7 +4,7 @@
 
 :root {
   font-size: 16px;
-  --widthWrp: #{ptr(1170)};
+  --widthWrp: #{ptr(1200)};
 }
 * {
   box-sizing: border-box;
@@ -313,7 +313,7 @@ header {
       .main {
         position: relative;
         .wImage {
-          &::before {
+          &:before {
             padding-bottom: wImage(353, 770);
           }
         }
@@ -445,7 +445,7 @@ header {
       }
     }
     .colRight {
-      width: percent(370);
+      width: 72%;
       .videoHome {
         @extend %videoHome;
         margin-bottom: ptr(25);

@@ -1088,7 +1088,7 @@ span a {
 
 :root {
   font-size: 16px;
-  --widthWrp: 73.125rem;
+  --widthWrp: 75rem;
 }
 
 * {
@@ -1391,7 +1391,7 @@ header .wrp #menu ul li ul ul {
 #newsHot .wrp .left .main {
   position: relative;
 }
-#newsHot .wrp .left .main .wImage::before {
+#newsHot .wrp .left .main .wImage:before {
   padding-bottom: 45.8441558442%;
 }
 #newsHot .wrp .left .main .info {
@@ -1513,7 +1513,7 @@ header .wrp #menu ul li ul ul {
   width: calc((100% - 1.875rem) / 2);
 }
 #containHome .wrp .colRight {
-  width: 31.6239316239%;
+  width: 72%;
 }
 #containHome .wrp .colRight .videoHome {
   margin-bottom: 1.5625rem;

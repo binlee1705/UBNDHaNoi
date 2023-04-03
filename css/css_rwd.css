@@ -203,20 +203,23 @@
   header .right .searchForm {
     display: none;
   }
-  #newsHot.inside .wrp .left {
+  #newsHot .wrp .left {
     width: 56%;
   }
-  #newsHot.inside .wrp .left .main .info {
+  #newsHot .wrp .left .main .info {
     position: static;
   }
-  #newsHot.inside .wrp .right {
+  #newsHot .wrp .right {
     flex: 1;
     padding-left: 1.25rem;
   }
-  #newsHot.inside .wrp .right .info a {
+  #newsHot .wrp .right .info {
+    padding: 0.625rem;
+  }
+  #newsHot .wrp .right .info a {
     padding-top: 0.625rem;
   }
-  #newsHot.inside .wrp .right .info a:first-child {
+  #newsHot .wrp .right .info a:first-child {
     padding-top: 0;
     border: none;
   }
@@ -226,20 +229,23 @@
   #containHome .wrp .colRight {
     width: 30%;
   }
-  #documentHome.home {
-    flex-direction: column;
-  }
-  #documentHome.home .parent {
-    width: 100%;
-  }
   #contact.home .content .statistical {
     gap: 1.25rem;
   }
   #contact.home .content .statistical li .text {
     white-space: nowrap;
   }
+  footer {
+    padding: 1.25rem 0;
+  }
   footer .wrp .listInfo {
     flex-direction: column;
+  }
+  #documentHome.home {
+    flex-direction: column;
+  }
+  #documentHome.home .parent {
+    width: 100%;
   }
   #documentHome.inside .wrp {
     flex-direction: column;

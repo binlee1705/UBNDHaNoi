@@ -246,26 +246,25 @@
     }
   }
   #newsHot {
-    &.inside {
-      .wrp {
-        .left {
-          width: 56%;
-          .main {
-            .info {
-              position: static;
-            }
+    .wrp {
+      .left {
+        width: 56%;
+        .main {
+          .info {
+            position: static;
           }
         }
-        .right {
-          flex: 1;
-          padding-left: ptr(20);
-          .info {
-            a {
-              padding-top: ptr(10);
-              &:first-child {
-                padding-top: 0;
-                border: none;
-              }
+      }
+      .right {
+        flex: 1;
+        padding-left: ptr(20);
+        .info {
+          padding: ptr(10);
+          a {
+            padding-top: ptr(10);
+            &:first-child {
+              padding-top: 0;
+              border: none;
             }
           }
         }
@@ -282,14 +281,6 @@
       }
     }
   }
-  #documentHome {
-    &.home {
-      flex-direction: column;
-      .parent {
-        width: 100%;
-      }
-    }
-  }
   #contact {
     &.home {
       .content .statistical {
@@ -303,6 +294,7 @@
     }
   }
   footer {
+    padding: ptr(20) 0;
     .wrp {
       .listInfo {
         flex-direction: column;
@@ -310,6 +302,12 @@
     }
   }
   #documentHome {
+    &.home {
+      flex-direction: column;
+      .parent {
+        width: 100%;
+      }
+    }
     &.inside {
       .wrp {
         flex-direction: column;

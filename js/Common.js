@@ -94,7 +94,7 @@ $(document).ready(() => {
     $('#galleryHome .imageHome').each(function () {
         $(this).owlCarousel(owlslide($(this).find('>*').length, [20, 20, 20, 20, 20, 20], false, true, true, [2, 2, 2, 2, 2], "", ""));
     });
-    $('#newsHot.inside .left .group').each(function () {
+    $('#newsHot .left .group').each(function () {
         $(this).owlCarousel(owlslide($(this).find('>*').length, [10, 10, 10, 10, 10, 10], true, false, false, [1, 1, 1, 1, 1], "", ""));
     });
 });
