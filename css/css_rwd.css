@@ -1,7 +1,7 @@
 @import "css_rwd_common.css";
 @media (max-width: 1199px) {
   :root {
-    font-size: 14px;
+    font-size: 15px;
   }
   .openList {
     display: block;
@@ -38,7 +38,7 @@
   .openList.ac hr:nth-child(3) {
     background: #fff;
     border-color: #fff;
-    transform: rotate(-135deg) translateX(6px) translateY(12px);
+    transform: rotate(-135deg) translateX(7px) translateY(12px);
   }
   .wrp {
     max-width: calc(100vw - 2.5rem);
@@ -113,6 +113,7 @@
   }
   header .wrp #menu ul li a {
     background: transparent !important;
+    line-height: 1.875rem;
     display: block;
     display: flex;
     padding: 0.9375rem 1.375rem;
@@ -189,6 +190,9 @@
   #containHome .wrp .colRight {
     width: 27%;
   }
+  #news .group .item .top .wImage {
+    width: 6.25rem;
+  }
 }
 @media (max-width: 991px) {
   header .right {
@@ -232,6 +236,16 @@
   footer .wrp .listInfo {
     flex-direction: column;
   }
+  #documentHome.inside .wrp {
+    flex-direction: column;
+  }
+  #documentHome.inside .wrp .colLeft {
+    width: 100%;
+  }
+  #documentHome.inside .wrp .colRight {
+    width: 100%;
+    margin-top: 1.25rem;
+  }
 }
 @media (max-width: 767px) {
   .wrp {
@@ -239,6 +253,7 @@
   }
   .commonTitle {
     font-size: 1rem;
+    padding: 0 0.3125rem;
   }
   .commonTitle .xtc {
     display: none;
@@ -255,11 +270,56 @@
   }
 }
 @media (max-width: 479px) {
+  header .wrp .top {
+    flex-direction: column;
+  }
+  header .wrp .top .logo {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header .wrp .top .logo .icon {
+    flex: 1;
+  }
+  header .wrp .top .logo .icon svg {
+    max-width: 100%;
+  }
+  header .wrp .top .logo .text {
+    padding-left: 0.625rem;
+  }
+  header .wrp .top .right {
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 0.625rem;
+    gap: 0rem;
+  }
+  header .wrp .top .right .searchForm {
+    display: flex;
+    max-width: 100%;
+    flex: 1;
+  }
+  header .wrp #menu ul li {
+    padding: 0;
+  }
+  header .wrp #menu ul li a {
+    font-size: 0.9375rem !important;
+    padding: 0.3125rem 0.625rem !important;
+    padding-left: 1.25rem !important;
+  }
+  header .wrp #menu ul .searchForm {
+    margin: 0 0.625rem;
+    margin-top: 1.25rem;
+  }
+  header .wrp #menu ul .searchForm .btnSearch {
+    padding: 0 !important;
+  }
   #newsHot.inside .wrp {
     flex-direction: column;
   }
   #newsHot.inside .wrp .left {
     width: 100%;
+  }
+  #newsHot.inside .wrp .left .main .info .name {
+    font-size: 1rem;
   }
   #newsHot.inside .wrp .right {
     width: 100%;
@@ -305,5 +365,75 @@
   #galleryHome .parent .imageHome {
     width: 100%;
     margin-top: 0.9375rem;
+  }
+  #newsDetail {
+    width: calc(100% + 1.25rem);
+    margin-left: -0.625rem;
+  }
+  #documentHome.home .tableDoc, #documentHome.inside .tableDoc {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #documentHome.home .tableDoc table, #documentHome.inside .tableDoc table {
+    font-size: 1rem;
+  }
+  #documentHome.home .tableDoc table thead, #documentHome.inside .tableDoc table thead {
+    background: #dfdfdf;
+  }
+  #documentHome.home .tableDoc table thead th, #documentHome.inside .tableDoc table thead th {
+    padding: 0.625rem 0rem;
+    font-size: 0.875rem;
+  }
+  #documentHome.home .tableDoc table tr td,
+  #documentHome.home .tableDoc table tr th, #documentHome.inside .tableDoc table tr td,
+  #documentHome.inside .tableDoc table tr th {
+    padding: 0.625rem;
+  }
+  #documentHome.home .tableDoc table tr td:nth-child(1),
+  #documentHome.home .tableDoc table tr th:nth-child(1), #documentHome.inside .tableDoc table tr td:nth-child(1),
+  #documentHome.inside .tableDoc table tr th:nth-child(1) {
+    width: 6.25rem;
+  }
+  #documentHome.home .tableDoc table tr td:nth-child(2),
+  #documentHome.home .tableDoc table tr th:nth-child(2), #documentHome.inside .tableDoc table tr td:nth-child(2),
+  #documentHome.inside .tableDoc table tr th:nth-child(2) {
+    width: 8.125rem;
+  }
+  #documentHome.home .detailDoc .tableDetail .content .rowDT .col1, #documentHome.inside .detailDoc .tableDetail .content .rowDT .col1 {
+    width: 11.25rem;
+  }
+  .tabs .commonTitle.tab-links li {
+    padding: 0.4375rem 0.3125rem;
+    text-align: center;
+  }
+  footer .wrp .logo {
+    margin-bottom: 1.25rem;
+  }
+  footer .wrp .logo .text span:first-child {
+    font-size: 1.0625rem;
+  }
+  footer .wrp .logo .text span:last-child {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 320px) {
+  :root {
+    font-size: 14px;
+  }
+  .openList {
+    width: 2.1875rem;
+  }
+  header .wrp .top .logo {
+    padding: 0;
+  }
+  header .wrp .top .logo .text {
+    padding-left: 0.625rem;
+  }
+  header .wrp .top .logo .text span:first-child {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  header .wrp .top .logo .text span:last-child {
+    font-size: 0.875rem;
   }
 }/*# sourceMappingURL=css_rwd.css.map */

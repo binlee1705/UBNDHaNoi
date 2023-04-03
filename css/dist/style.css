@@ -1246,9 +1246,16 @@ header .wrp .top .right .language {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-left: 0.625rem;
 }
 header .wrp .top .right .language li {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+header .wrp .top .right .language li img {
+  max-width: 3rem;
 }
 header .wrp .top .right .language li ul {
   list-style: none;
@@ -1930,7 +1937,11 @@ footer .wrp .listInfo ul li {
   display: flex;
   align-items: center;
 }
+footer .wrp .listInfo ul li .icon {
+  width: 2.625rem;
+}
 footer .wrp .listInfo ul li .text {
+  flex: 1;
   margin-left: 1.25rem;
   display: flex;
   flex-direction: column;
@@ -1967,6 +1978,7 @@ footer .wrp .listInfo ul li .text {
 #news .group .item .top {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 #news .group .item .top .wImage {
   border: 1px solid #cfdde9;
@@ -2029,6 +2041,9 @@ footer .wrp .listInfo ul li .text {
   stroke: #fff;
 }
 
+#pathWay {
+  margin-bottom: 0.3125rem;
+}
 #pathWay a {
   font-size: 0.875rem;
   line-height: 1.5rem;
@@ -2052,7 +2067,7 @@ footer .wrp .listInfo ul li .text {
 #newsDetail .contentMain .titleNews {
   font-weight: 700;
   font-size: 1.25rem;
-  line-height: 1.5rem;
+  line-height: 1.75rem;
   color: #2873aa;
   display: block;
   margin-bottom: 0.625rem;

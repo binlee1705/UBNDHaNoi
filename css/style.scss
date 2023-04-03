@@ -158,8 +158,15 @@ header {
           list-style: none;
           padding: 0;
           margin: 0;
+          margin-left: ptr(10);
           li {
             position: relative;
+            display: flex;
+            align-items: center;
+            gap: ptr(10);
+            img {
+              max-width: ptr(48);
+            }
             ul {
               list-style: none;
               padding: 0;
@@ -885,7 +892,11 @@ footer {
         li {
           display: flex;
           align-items: center;
+          .icon {
+            width: ptr(42);
+          }
           .text {
+            flex: 1;
             margin-left: ptr(20);
             display: flex;
             flex-direction: column;
@@ -926,6 +937,7 @@ footer {
       .top {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         .wImage {
           border: 1px solid #cfdde9;
           border-radius: 10px;
@@ -992,6 +1004,7 @@ footer {
   }
 }
 #pathWay {
+  margin-bottom: ptr(5);
   a {
     font-size: ptr(14);
     line-height: ptr(24);
@@ -1015,7 +1028,7 @@ footer {
     .titleNews {
       font-weight: 700;
       font-size: ptr(20);
-      line-height: ptr(24);
+      line-height: ptr(28);
       color: #2873aa;
       display: block;
       margin-bottom: ptr(10);

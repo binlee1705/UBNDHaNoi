@@ -3,7 +3,7 @@
 
 @media (max-width: 1199px) {
   :root {
-    font-size: 14px;
+    font-size: 15px;
   }
   .openList {
     display: block;
@@ -38,7 +38,7 @@
       hr:nth-child(3) {
         background: #fff;
         border-color: #fff;
-        transform: rotate(-135deg) translateX(6px) translateY(12px);
+        transform: rotate(-135deg) translateX(7px) translateY(12px);
       }
     }
   }
@@ -123,6 +123,7 @@
             }
             a {
               background: transparent !important;
+              line-height: ptr(30);
               &:not(.btnSearch) {
                 svg {
                   display: none;
@@ -219,6 +220,18 @@
       }
     }
   }
+
+  #news {
+    .group {
+      .item {
+        .top {
+          .wImage {
+            width: ptr(100);
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -293,6 +306,20 @@
       }
     }
   }
+  #documentHome {
+    &.inside {
+      .wrp {
+        flex-direction: column;
+        .colLeft {
+          width: 100%;
+        }
+        .colRight {
+          width: 100%;
+          margin-top: ptr(20);
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -301,6 +328,7 @@
   }
   .commonTitle {
     font-size: ptr(16);
+    padding: 0 ptr(5);
     .xtc {
       display: none;
     }
@@ -318,12 +346,69 @@
 }
 
 @media (max-width: 479px) {
+  header {
+    .wrp {
+      .top {
+        flex-direction: column;
+        .logo {
+          padding-left: 0;
+          padding-right: 0;
+          .icon {
+            flex: 1;
+            svg {
+              max-width: 100%;
+            }
+          }
+          .text {
+            padding-left: ptr(10);
+          }
+        }
+        .right {
+          width: 100%;
+          justify-content: flex-end;
+          margin-bottom: ptr(10);
+          gap: ptr(0);
+          .searchForm {
+            display: flex;
+            max-width: 100%;
+            flex: 1;
+          }
+        }
+      }
+      #menu {
+        ul {
+          li {
+            padding: 0;
+            a {
+              font-size: ptr(15) !important;
+              padding: ptr(5) ptr(10) !important;
+              padding-left: ptr(20) !important;
+            }
+          }
+          .searchForm {
+            margin: 0 ptr(10);
+            margin-top: ptr(20);
+            .btnSearch {
+              padding: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
   #newsHot {
     &.inside {
       .wrp {
         flex-direction: column;
         .left {
           width: 100%;
+          .main {
+            .info {
+              .name {
+                font-size: ptr(16);
+              }
+            }
+          }
         }
         .right {
           width: 100%;
@@ -378,6 +463,97 @@
       .imageHome {
         width: 100%;
         margin-top: ptr(15);
+      }
+    }
+  }
+  #newsDetail {
+    width: calc(100% + #{ptr(20)});
+    margin-left: ptr(-10);
+  }
+  #documentHome {
+    &.home,
+    &.inside {
+      .tableDoc {
+        padding-left: 0;
+        padding-right: 0;
+        table {
+          font-size: ptr(16);
+          thead {
+            background: #dfdfdf;
+            th {
+              padding: ptr(10) ptr(0);
+              font-size: ptr(14);
+            }
+          }
+          tr {
+            td,
+            th {
+              padding: ptr(10);
+              &:nth-child(1) {
+                width: ptr(100);
+              }
+              &:nth-child(2) {
+                width: ptr(130);
+              }
+              &:nth-child(3) {
+              }
+            }
+          }
+        }
+      }
+      .detailDoc .tableDetail .content .rowDT {
+        .col1 {
+          width: ptr(180);
+        }
+      }
+    }
+  }
+  .tabs .commonTitle.tab-links {
+    li {
+      padding: ptr(7) ptr(5);
+      text-align: center;
+    }
+  }
+  footer {
+    .wrp {
+      .logo {
+        margin-bottom: ptr(20);
+        .text {
+          span:first-child {
+            font-size: ptr(17);
+          }
+          span:last-child {
+            font-size: ptr(16);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  :root {
+    font-size: 14px;
+  }
+  .openList {
+    width: ptr(35);
+  }
+  header {
+    .wrp {
+      .top {
+        .logo {
+          padding: 0;
+          .text {
+            padding-left: ptr(10);
+            span:first-child {
+              font-size: ptr(16);
+              margin-bottom: 0;
+            }
+            span:last-child {
+              font-size: ptr(14);
+            }
+          }
+        }
       }
     }
   }
