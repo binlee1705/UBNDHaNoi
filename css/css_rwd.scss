@@ -398,24 +398,22 @@
     }
   }
   #newsHot {
-    &.inside {
-      .wrp {
-        flex-direction: column;
-        .left {
-          width: 100%;
-          .main {
-            .info {
-              .name {
-                font-size: ptr(16);
-              }
+    .wrp {
+      flex-direction: column;
+      .left {
+        width: 100%;
+        .main {
+          .info {
+            .name {
+              font-size: ptr(16);
             }
           }
         }
-        .right {
-          width: 100%;
-          padding-left: ptr(0);
-          margin-top: ptr(20);
-        }
+      }
+      .right {
+        width: 100%;
+        padding-left: ptr(0);
+        margin-top: ptr(20);
       }
     }
   }

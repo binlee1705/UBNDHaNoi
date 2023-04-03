@@ -338,16 +338,16 @@
     padding: 0 !important;
   }
 
-  #newsHot.inside .wrp {
+  #newsHot .wrp {
     flex-direction: column;
   }
-  #newsHot.inside .wrp .left {
+  #newsHot .wrp .left {
     width: 100%;
   }
-  #newsHot.inside .wrp .left .main .info .name {
+  #newsHot .wrp .left .main .info .name {
     font-size: 1rem;
   }
-  #newsHot.inside .wrp .right {
+  #newsHot .wrp .right {
     width: 100%;
     padding-left: 0rem;
     margin-top: 1.25rem;
