@@ -432,7 +432,7 @@ header {
     display: flex;
     justify-content: space-between;
     .colLeft {
-      width: percent(770);
+      width: 72%;
       .bannerTop {
         display: flex;
         justify-content: space-between;
@@ -445,7 +445,7 @@ header {
       }
     }
     .colRight {
-      width: 72%;
+      width: 26%;
       .videoHome {
         @extend %videoHome;
         margin-bottom: ptr(25);

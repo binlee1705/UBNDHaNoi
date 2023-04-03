@@ -1500,7 +1500,7 @@ header .wrp #menu ul li ul ul {
   justify-content: space-between;
 }
 #containHome .wrp .colLeft {
-  width: 65.811965812%;
+  width: 72%;
 }
 #containHome .wrp .colLeft .bannerTop {
   display: flex;
@@ -1513,7 +1513,7 @@ header .wrp #menu ul li ul ul {
   width: calc((100% - 1.875rem) / 2);
 }
 #containHome .wrp .colRight {
-  width: 72%;
+  width: 26%;
 }
 #containHome .wrp .colRight .videoHome {
   margin-bottom: 1.5625rem;
