@@ -156,7 +156,7 @@
     pointer-events: all;
     padding: 0 !important;
     padding-left: 1.25rem;
-    transition: none;
+    transition: none !important;
     height: auto;
     display: none;
     width: 100%;

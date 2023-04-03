@@ -75,7 +75,7 @@ $(document).ready(() => {
         $('#overlay').fadeToggle();
     });
     $('.openSub').click(function () {
-        $(this).next('ul').slideToggle();
+        $(this).next('ul').fadeToggle();
         $(this).toggleClass('ac');
         $(this).parents('li').toggleClass('ac');
     });
