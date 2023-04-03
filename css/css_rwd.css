@@ -38,7 +38,7 @@
   .openList.ac hr:nth-child(3) {
     background: #fff;
     border-color: #fff;
-    transform: rotate(-135deg) translateX(7px) translateY(12px);
+    transform: rotate(-135deg) translateX(7px) translateY(14px);
   }
   .wrp {
     max-width: calc(100vw - 2.5rem);
@@ -195,6 +195,9 @@
   }
 }
 @media (max-width: 991px) {
+  .commonTitle {
+    font-size: 1rem;
+  }
   header .right {
     gap: 0rem;
   }
@@ -229,6 +232,9 @@
   }
   #documentHome.home .parent {
     width: 100%;
+  }
+  #contact.home .content .statistical {
+    gap: 1.25rem;
   }
   #contact.home .content .statistical li .text {
     white-space: nowrap;
@@ -369,6 +375,9 @@
   #newsDetail {
     width: calc(100% + 1.25rem);
     margin-left: -0.625rem;
+  }
+  #newsDetail .otherNews {
+    margin: 0 0.625rem;
   }
   #documentHome.home .tableDoc, #documentHome.inside .tableDoc {
     padding-left: 0;

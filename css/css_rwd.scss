@@ -38,7 +38,7 @@
       hr:nth-child(3) {
         background: #fff;
         border-color: #fff;
-        transform: rotate(-135deg) translateX(7px) translateY(12px);
+        transform: rotate(-135deg) translateX(7px) translateY(14px);
       }
     }
   }
@@ -235,6 +235,9 @@
 }
 
 @media (max-width: 991px) {
+  .commonTitle {
+    font-size: ptr(16);
+  }
   header {
     .right {
       gap: ptr(0);
@@ -291,6 +294,7 @@
   #contact {
     &.home {
       .content .statistical {
+        gap: ptr(20);
         li {
           .text {
             white-space: nowrap;
@@ -469,6 +473,9 @@
   #newsDetail {
     width: calc(100% + #{ptr(20)});
     margin-left: ptr(-10);
+    .otherNews {
+      margin: 0 ptr(10);
+    }
   }
   #documentHome {
     &.home,
