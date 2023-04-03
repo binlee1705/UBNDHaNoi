@@ -1356,6 +1356,7 @@ header .wrp #menu ul li ul ul {
 
 #newsHot {
   background: url(../pic/bgNewHot.png) center no-repeat, #e9f0fa;
+  position: relative;
   background-size: cover;
   padding-bottom: 1.25rem;
   margin-bottom: 1.5625rem;
@@ -1574,6 +1575,7 @@ header .wrp #menu ul li ul ul {
   margin-bottom: 0.625rem;
 }
 #newsHome .parent .group .list {
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1582,6 +1584,7 @@ header .wrp #menu ul li ul ul {
   flex-wrap: wrap;
 }
 #newsHome .parent .group .list li {
+  width: 100%;
   background: #fff;
   padding: 0.5rem 0.9375rem;
 }
