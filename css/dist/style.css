@@ -1438,6 +1438,9 @@ header .wrp #menu ul li ul ul {
   padding: 0.625rem 0;
   gap: 0.625rem;
 }
+#newsHot .wrp .left .list li a > span {
+  flex: 1;
+}
 #newsHot .wrp .left .list li a:hover {
   color: #2873aa;
 }

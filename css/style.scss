@@ -356,6 +356,9 @@ header {
           border-bottom: 1px solid rgba(40, 115, 170, 0.2);
           padding: ptr(10) 0;
           gap: ptr(10);
+          > span {
+            flex: 1;
+          }
           &:hover {
             color: $color-hover;
             svg path {
