@@ -1357,7 +1357,7 @@ header .wrp #menu ul li ul ul {
 #newsHot {
   background: url(../pic/bgNewHot.png) center no-repeat, #e9f0fa;
   position: relative;
-  padding-bottom: 1.25rem;
+  padding-bottom: 0.625rem;
   margin-bottom: 0.625rem;
 }
 #newsHot .marquee {
