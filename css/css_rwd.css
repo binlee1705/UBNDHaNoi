@@ -392,6 +392,7 @@
   }
   #galleryHome .parent .videoHome {
     width: 100%;
+    padding-right: 0;
   }
   #galleryHome .parent .imageHome {
     width: 100%;
