@@ -308,7 +308,7 @@ header {
     display: flex;
     justify-content: space-between;
     .left {
-      width: percent(770);
+      width: percent(777);
       .main {
         position: relative;
         .wImage {
@@ -370,7 +370,7 @@ header {
     }
     .right {
       flex: 1;
-      padding-left: ptr(20);
+      padding-left: ptr(10);
       .main {
         position: relative;
         .wImage {

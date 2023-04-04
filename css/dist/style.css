@@ -1389,7 +1389,7 @@ header .wrp #menu ul li ul ul {
   justify-content: space-between;
 }
 #newsHot .wrp .left {
-  width: 65.811965812%;
+  width: 66.4102564103%;
 }
 #newsHot .wrp .left .main {
   position: relative;
@@ -1449,7 +1449,7 @@ header .wrp #menu ul li ul ul {
 }
 #newsHot .wrp .right {
   flex: 1;
-  padding-left: 1.25rem;
+  padding-left: 0.625rem;
 }
 #newsHot .wrp .right .main {
   position: relative;
