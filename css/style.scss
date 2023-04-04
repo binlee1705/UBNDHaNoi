@@ -283,7 +283,7 @@ header {
   background: url(../pic/bgNewHot.png) center no-repeat, #e9f0fa;
   position: relative;
   padding-bottom: ptr(20);
-  margin-bottom: ptr(25);
+  margin-bottom: ptr(10);
   .marquee {
     padding-bottom: ptr(20);
     padding-top: ptr(10);
@@ -313,7 +313,7 @@ header {
         position: relative;
         .wImage {
           &:before {
-            padding-bottom: wImage(353, 770);
+            padding-bottom: wImage(365, 770);
           }
         }
         .info {
@@ -369,7 +369,8 @@ header {
       }
     }
     .right {
-      width: percent(370);
+      flex: 1;
+      padding-left: ptr(20);
       .main {
         position: relative;
         .wImage {
@@ -429,20 +430,20 @@ header {
   }
 }
 #containHome {
-  margin-top: ptr(20);
+  margin-top: ptr(10);
   .wrp {
     display: flex;
     justify-content: space-between;
     .colLeft {
-      width: 72%;
+      width: 73%;
       .bannerTop {
         display: flex;
         justify-content: space-between;
-        gap: ptr(30);
+        gap: ptr(10);
         margin-bottom: ptr(20);
         flex-wrap: wrap;
         > a {
-          width: calc((100% - #{ptr(30)}) / 2);
+          width: calc((100% - #{ptr(10)}) / 2);
         }
       }
     }
@@ -450,14 +451,14 @@ header {
       width: 26%;
       .videoHome {
         @extend %videoHome;
-        margin-bottom: ptr(25);
+        margin-bottom: ptr(5);
       }
       #linkImage {
-        margin-bottom: ptr(20);
+        margin-bottom: ptr(10);
         .group {
           display: flex;
           flex-direction: column;
-          gap: ptr(15);
+          gap: ptr(5);
         }
       }
       #map {
@@ -480,7 +481,7 @@ header {
       .main {
         display: flex;
         justify-content: space-between;
-        margin-bottom: ptr(25);
+        margin-bottom: ptr(10);
         align-items: flex-start;
         .wImage {
           width: percent(371, 770);
@@ -563,9 +564,9 @@ header {
   &.home {
     display: flex;
     flex-wrap: wrap;
-    gap: ptr(30);
+    gap: ptr(10);
     .parent {
-      width: calc((100% - #{ptr(30)}) / 2);
+      width: calc((100% - #{ptr(10)}) / 2);
       .commonTitle {
         padding: 0 ptr(10);
       }
@@ -632,7 +633,7 @@ header {
     }
   }
   &.inside {
-    padding-top: ptr(27);
+    padding-top: ptr(10);
     .wrp {
       display: flex;
       justify-content: space-between;
@@ -640,7 +641,8 @@ header {
         width: percent(370);
       }
       .colRight {
-        width: percent(770);
+        flex: 1;
+        padding-left: ptr(10);
         .parent {
           margin-bottom: 0;
           .pagging {
@@ -742,14 +744,15 @@ header {
     justify-content: space-between;
     .videoHome {
       @extend %videoHome;
-      width: percent(370, 730);
+      flex: 1;
+      padding-right: ptr(10);
     }
     .imageHome {
-      width: percent(335, 730);
+      width: 47.5%;
       .group {
         display: flex;
         flex-direction: column;
-        gap: ptr(20);
+        gap: ptr(10);
         .wImage {
           &:before {
             padding-bottom: wImage(120, 170);
@@ -761,7 +764,7 @@ header {
 }
 #contact {
   &.home {
-    margin-top: ptr(50);
+    margin-top: ptr(20);
     background: url(../pic/bgContact.png) center no-repeat;
     background-size: cover;
     display: flex;
@@ -1028,7 +1031,7 @@ footer {
     background: #ffffff;
     box-shadow: 0px 0px 10px rgba(36, 65, 131, 0.1);
     padding: 0 ptr(20);
-    margin-bottom: ptr(50);
+    margin-bottom: ptr(10);
     padding-bottom: ptr(30);
     .titleNews {
       font-weight: 700;

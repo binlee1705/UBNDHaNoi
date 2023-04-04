@@ -1362,7 +1362,7 @@ header .wrp #menu ul li ul ul {
   background: url(../pic/bgNewHot.png) center no-repeat, #e9f0fa;
   position: relative;
   padding-bottom: 1.25rem;
-  margin-bottom: 1.5625rem;
+  margin-bottom: 0.625rem;
 }
 #newsHot .marquee {
   padding-bottom: 1.25rem;
@@ -1395,7 +1395,7 @@ header .wrp #menu ul li ul ul {
   position: relative;
 }
 #newsHot .wrp .left .main .wImage:before {
-  padding-bottom: 45.8441558442%;
+  padding-bottom: 47.4025974026%;
 }
 #newsHot .wrp .left .main .info {
   pointer-events: none;
@@ -1448,7 +1448,8 @@ header .wrp #menu ul li ul ul {
   stroke: #2873aa;
 }
 #newsHot .wrp .right {
-  width: 31.6239316239%;
+  flex: 1;
+  padding-left: 1.25rem;
 }
 #newsHot .wrp .right .main {
   position: relative;
@@ -1499,38 +1500,38 @@ header .wrp #menu ul li ul ul {
 }
 
 #containHome {
-  margin-top: 1.25rem;
+  margin-top: 0.625rem;
 }
 #containHome .wrp {
   display: flex;
   justify-content: space-between;
 }
 #containHome .wrp .colLeft {
-  width: 72%;
+  width: 73%;
 }
 #containHome .wrp .colLeft .bannerTop {
   display: flex;
   justify-content: space-between;
-  gap: 1.875rem;
+  gap: 0.625rem;
   margin-bottom: 1.25rem;
   flex-wrap: wrap;
 }
 #containHome .wrp .colLeft .bannerTop > a {
-  width: calc((100% - 1.875rem) / 2);
+  width: calc((100% - 0.625rem) / 2);
 }
 #containHome .wrp .colRight {
   width: 26%;
 }
 #containHome .wrp .colRight .videoHome {
-  margin-bottom: 1.5625rem;
+  margin-bottom: 0.3125rem;
 }
 #containHome .wrp .colRight #linkImage {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.625rem;
 }
 #containHome .wrp .colRight #linkImage .group {
   display: flex;
   flex-direction: column;
-  gap: 0.9375rem;
+  gap: 0.3125rem;
 }
 #containHome .wrp .colRight #map .iFrame {
   width: 100%;
@@ -1547,7 +1548,7 @@ header .wrp #menu ul li ul ul {
 #newsHome .parent .group .main {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.5625rem;
+  margin-bottom: 0.625rem;
   align-items: flex-start;
 }
 #newsHome .parent .group .main .wImage {
@@ -1625,10 +1626,10 @@ header .wrp #menu ul li ul ul {
 #documentHome.home {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.875rem;
+  gap: 0.625rem;
 }
 #documentHome.home .parent {
-  width: calc((100% - 1.875rem) / 2);
+  width: calc((100% - 0.625rem) / 2);
 }
 #documentHome.home .parent .commonTitle {
   padding: 0 0.625rem;
@@ -1690,7 +1691,7 @@ header .wrp #menu ul li ul ul {
   width: 12.5rem;
 }
 #documentHome.inside {
-  padding-top: 1.6875rem;
+  padding-top: 0.625rem;
 }
 #documentHome.inside .wrp {
   display: flex;
@@ -1700,7 +1701,8 @@ header .wrp #menu ul li ul ul {
   width: 31.6239316239%;
 }
 #documentHome.inside .wrp .colRight {
-  width: 65.811965812%;
+  flex: 1;
+  padding-left: 0.625rem;
 }
 #documentHome.inside .wrp .colRight .parent {
   margin-bottom: 0;
@@ -1793,22 +1795,23 @@ header .wrp #menu ul li ul ul {
   justify-content: space-between;
 }
 #galleryHome .parent .videoHome {
-  width: 50.6849315068%;
+  flex: 1;
+  padding-right: 0.625rem;
 }
 #galleryHome .parent .imageHome {
-  width: 45.8904109589%;
+  width: 47.5%;
 }
 #galleryHome .parent .imageHome .group {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 0.625rem;
 }
 #galleryHome .parent .imageHome .group .wImage:before {
   padding-bottom: 70.5882352941%;
 }
 
 #contact.home {
-  margin-top: 3.125rem;
+  margin-top: 1.25rem;
   background: url(../pic/bgContact.png) center no-repeat;
   background-size: cover;
   display: flex;
@@ -2066,7 +2069,7 @@ footer .wrp .listInfo ul li .text {
   background: #ffffff;
   box-shadow: 0px 0px 10px rgba(36, 65, 131, 0.1);
   padding: 0 1.25rem;
-  margin-bottom: 3.125rem;
+  margin-bottom: 0.625rem;
   padding-bottom: 1.875rem;
 }
 #newsDetail .contentMain .titleNews {

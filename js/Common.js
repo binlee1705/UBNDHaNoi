@@ -89,10 +89,14 @@ $(document).ready(() => {
     $('.modal').on('shown.bs.modal', function () {
         $(this).trigger('focus')
     })
+    $(".toggleSearch").click(function () {
+        var $filter = $(this).next(".formFilter");
+        $filter.toggleClass("ac");
+    });
     $(".marquee").marquee({ duration: 20000, gap: 20, delayBeforeStart: 0, direction: "left", duplicated: true, pauseOnHover: true, startVisible: true });
 
     $('#galleryHome .imageHome').each(function () {
-        $(this).owlCarousel(owlslide($(this).find('>*').length, [20, 20, 20, 20, 20, 20], false, true, true, [2, 2, 2, 2, 2], "", ""));
+        $(this).owlCarousel(owlslide($(this).find('>*').length, [10, 10, 10, 10, 10, 10], false, true, true, [2, 2, 2, 2, 2], "", ""));
     });
     $('#newsHot .left .group').each(function () {
         $(this).owlCarousel(owlslide($(this).find('>*').length, [10, 10, 10, 10, 10, 10], true, false, false, [1, 1, 1, 1, 1], "", ""));
