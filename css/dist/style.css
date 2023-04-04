@@ -1108,6 +1108,9 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   background: #f7f7f7;
+  background: url(../pic/bgNewHot.png) top center no-repeat, #e9f0fa;
+  background-attachment: fixed;
+  background-size: cover;
 }
 body.fullScreen {
   overflow: hidden;
@@ -1199,9 +1202,10 @@ header:after {
 header .bgHead {
   width: 100%;
   pointer-events: none;
+  height: 15.625rem;
 }
 header .bgHead:before {
-  padding-bottom: 15%;
+  padding-bottom: 0;
 }
 header .wrp {
   z-index: 6;
@@ -1359,7 +1363,6 @@ header .wrp #menu ul li ul ul {
 }
 
 #newsHot {
-  background: url(../pic/bgNewHot.png) center no-repeat, #e9f0fa;
   position: relative;
   padding-bottom: 0.625rem;
   margin-bottom: 0.625rem;

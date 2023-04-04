@@ -18,6 +18,9 @@ body {
   font-size: ptr(16);
   line-height: ptr(24);
   background: #f7f7f7;
+  background: url(../pic/bgNewHot.png) top center no-repeat, #e9f0fa;
+  background-attachment: fixed;
+  background-size: cover;
   &.fullScreen {
     overflow: hidden;
   }
@@ -111,8 +114,9 @@ header {
   .bgHead {
     width: 100%;
     pointer-events: none;
+    height: ptr(250);
     &:before {
-      padding-bottom: 15%;
+      padding-bottom: 0;
     }
   }
   .wrp {
@@ -280,7 +284,7 @@ header {
   }
 }
 #newsHot {
-  background: url(../pic/bgNewHot.png) center no-repeat, #e9f0fa;
+  // background: url(../pic/bgNewHot.png) center no-repeat, #e9f0fa;
   position: relative;
   padding-bottom: ptr(10);
   margin-bottom: ptr(10);
