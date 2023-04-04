@@ -1391,7 +1391,7 @@ header .wrp #menu ul li ul ul {
   position: relative;
 }
 #newsHot .wrp .left .main .wImage:before {
-  padding-bottom: 47.4025974026%;
+  padding-bottom: 46.8831168831%;
 }
 #newsHot .wrp .left .main .info {
   pointer-events: none;
@@ -1585,11 +1585,12 @@ header .wrp #menu ul li ul ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0.3125rem 0;
 }
 #newsHome .parent .group .list li {
   width: 100%;
   background: #fff;
-  padding: 0.5rem 0.9375rem;
+  padding: 0rem 0.9375rem;
 }
 #newsHome .parent .group .list li:last-child a {
   border: none;

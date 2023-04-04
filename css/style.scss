@@ -313,7 +313,7 @@ header {
         position: relative;
         .wImage {
           &:before {
-            padding-bottom: wImage(365, 770);
+            padding-bottom: wImage(361, 770);
           }
         }
         .info {
@@ -521,10 +521,11 @@ header {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding: ptr(5) 0;
         li {
           width: 100%;
           background: #fff;
-          padding: ptr(8) ptr(15);
+          padding: ptr(0) ptr(15);
           &:last-child {
             a {
               border: none;
