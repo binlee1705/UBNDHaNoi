@@ -1201,7 +1201,7 @@ header .bgHead {
   pointer-events: none;
 }
 header .bgHead:before {
-  padding-bottom: 28.4027777778%;
+  padding-bottom: 15%;
 }
 header .wrp {
   z-index: 6;
