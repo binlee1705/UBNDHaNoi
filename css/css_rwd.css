@@ -61,6 +61,10 @@
     width: 100%;
     position: static;
   }
+  header .wrp .top .logo .icon svg {
+    width: 5.625rem;
+    height: 5.625rem;
+  }
   header .wrp .top .right {
     gap: 0rem;
   }
@@ -231,9 +235,6 @@
   #contact.home .content .statistical li .text {
     white-space: nowrap;
   }
-  header .wrp .top .logo {
-    zoom: 0.9;
-  }
   footer {
     padding: 1.25rem 0;
   }
@@ -309,8 +310,16 @@
   header .wrp .top .logo {
     padding-left: 0;
     padding-right: 0;
-    zoom: 0.6;
-    margin-bottom: 0.625rem;
+  }
+  header .wrp .top .logo .text {
+    padding-left: 0.625rem;
+  }
+  header .wrp .top .logo .text span:first-child {
+    font-size: 1.875rem;
+    margin-bottom: 0;
+  }
+  header .wrp .top .logo .text span:last-child {
+    font-size: 1.5rem;
   }
   header .wrp .top .right {
     width: 100%;
@@ -458,7 +467,15 @@
   .openList {
     width: 2.1875rem;
   }
-  header .wrp .top .logo {
-    zoom: 0.55;
+  header .wrp .top .logo .text {
+    padding-left: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+  header .wrp .top .logo .text span:first-child {
+    font-size: 1.5625rem;
+    margin-bottom: 0;
+  }
+  header .wrp .top .logo .text span:last-child {
+    font-size: 1.25rem;
   }
 }/*# sourceMappingURL=css_rwd.css.map */
