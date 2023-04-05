@@ -63,14 +63,18 @@
         width: 100%;
         position: static;
         .logo {
-          .icon {
-            svg {
-              width: ptr(90);
-              height: ptr(90);
-            }
-          }
+          // .icon {
+          //   svg {
+          //     width: ptr(90);
+          //     height: ptr(90);
+          //   }
+          // }
         }
         .right {
+          gap: ptr(0);
+          .searchForm {
+            display: none;
+          }
           .language {
             svg path {
               fill: #333;
@@ -237,14 +241,6 @@
   .commonTitle {
     font-size: ptr(16);
   }
-  header {
-    .right {
-      gap: ptr(0);
-      .searchForm {
-        display: none;
-      }
-    }
-  }
   #newsHot {
     .wrp {
       .left {
@@ -289,6 +285,15 @@
           .text {
             white-space: nowrap;
           }
+        }
+      }
+    }
+  }
+  header {
+    .wrp {
+      .top {
+        .logo {
+          zoom: 0.9;
         }
       }
     }
@@ -347,6 +352,15 @@
   .wrp {
     max-width: calc(100vw - #{ptr(20)});
   }
+  header {
+    .wrp {
+      .top {
+        .logo {
+          zoom: 0.7;
+        }
+      }
+    }
+  }
   .commonTitle {
     font-size: ptr(16);
     padding: 0 ptr(5);
@@ -374,15 +388,8 @@
         .logo {
           padding-left: 0;
           padding-right: 0;
-          .icon {
-            flex: 1;
-            svg {
-              max-width: 100%;
-            }
-          }
-          .text {
-            padding-left: ptr(10);
-          }
+          zoom: 0.6;
+          margin-bottom: ptr(10);
         }
         .right {
           width: 100%;
@@ -575,17 +582,17 @@
     .wrp {
       .top {
         .logo {
-          padding: 0;
-          .text {
-            padding-left: ptr(10);
-            span:first-child {
-              font-size: ptr(16);
-              margin-bottom: 0;
-            }
-            span:last-child {
-              font-size: ptr(14);
-            }
-          }
+          zoom: 0.55;
+          // .text {
+          //   padding-left: ptr(10);
+          //   span:first-child {
+          //     font-size: ptr(16);
+          //     margin-bottom: 0;
+          //   }
+          //   span:last-child {
+          //     font-size: ptr(14);
+          //   }
+          // }
         }
       }
     }

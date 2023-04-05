@@ -143,12 +143,14 @@ header {
           flex-direction: column;
           color: #004577;
           text-transform: uppercase;
-          font-weight: 600;
+          font-weight: 700;
           span:first-child {
-            font-size: ptr(22);
-            margin-bottom: ptr(8);
+            font-size: ptr(34);
+            line-height: 150%;
           }
           span:last-child {
+            font-size: ptr(24);
+            line-height: 150%;
           }
         }
       }
@@ -166,6 +168,9 @@ header {
             display: flex;
             align-items: center;
             gap: ptr(10);
+            > svg path {
+              fill: #2873aa;
+            }
             img {
               max-width: ptr(48);
             }
@@ -192,7 +197,7 @@ header {
     .searchForm {
       display: flex;
       align-items: center;
-      background: #fff;
+      background: #bbd7ea;
       border-radius: ptr(20);
       overflow: hidden;
       width: ptr(336);
@@ -202,6 +207,7 @@ header {
         outline: none;
         padding: 0 ptr(15);
         font-size: ptr(14);
+        background: transparent;
       }
       .btnSearch {
         width: ptr(30);

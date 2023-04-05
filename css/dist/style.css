@@ -1233,11 +1233,15 @@ header .wrp .top .logo .text {
   flex-direction: column;
   color: #004577;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
 }
 header .wrp .top .logo .text span:first-child {
-  font-size: 1.375rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.125rem;
+  line-height: 150%;
+}
+header .wrp .top .logo .text span:last-child {
+  font-size: 1.5rem;
+  line-height: 150%;
 }
 header .wrp .top .right {
   display: flex;
@@ -1255,6 +1259,9 @@ header .wrp .top .right .language li {
   display: flex;
   align-items: center;
   gap: 0.625rem;
+}
+header .wrp .top .right .language li > svg path {
+  fill: #2873aa;
 }
 header .wrp .top .right .language li img {
   max-width: 3rem;
@@ -1276,7 +1283,7 @@ header .wrp .top .right .language li:hover > ul {
 header .wrp .searchForm {
   display: flex;
   align-items: center;
-  background: #fff;
+  background: #bbd7ea;
   border-radius: 1.25rem;
   overflow: hidden;
   width: 21rem;
@@ -1287,6 +1294,7 @@ header .wrp .searchForm .inputSearch {
   outline: none;
   padding: 0 0.9375rem;
   font-size: 0.875rem;
+  background: transparent;
 }
 header .wrp .searchForm .btnSearch {
   width: 1.875rem;
