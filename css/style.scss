@@ -141,6 +141,7 @@ header {
         .icon {
           flex: 1;
           svg {
+            min-width: ptr(90);
             max-width: 100%;
           }
         }

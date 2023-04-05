@@ -1232,6 +1232,7 @@ header .wrp .top .logo .icon {
   flex: 1;
 }
 header .wrp .top .logo .icon svg {
+  min-width: 5.625rem;
   max-width: 100%;
 }
 header .wrp .top .logo .text {
