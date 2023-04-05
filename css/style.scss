@@ -133,10 +133,17 @@ header {
       align-items: center;
       .logo {
         // background: linear-gradient(88.33deg, #015ea2 1%, #5db0ec 99.21%);
+        max-width: 100%;
         display: flex;
         padding: ptr(10) ptr(20);
         border-radius: 0 0 ptr(20) ptr(20);
         align-items: center;
+        .icon {
+          flex: 1;
+          svg {
+            max-width: 100%;
+          }
+        }
         .text {
           padding-left: ptr(20);
           display: flex;

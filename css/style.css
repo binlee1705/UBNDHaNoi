@@ -1218,10 +1218,17 @@ header .wrp .top {
   align-items: center;
 }
 header .wrp .top .logo {
+  max-width: 100%;
   display: flex;
   padding: 0.625rem 1.25rem;
   border-radius: 0 0 1.25rem 1.25rem;
   align-items: center;
+}
+header .wrp .top .logo .icon {
+  flex: 1;
+}
+header .wrp .top .logo .icon svg {
+  max-width: 100%;
 }
 header .wrp .top .logo .text {
   padding-left: 1.25rem;
