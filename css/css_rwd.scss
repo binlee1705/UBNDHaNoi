@@ -289,14 +289,6 @@
       }
     }
   }
-  header {
-    .wrp {
-      .top {
-        .logo {
-        }
-      }
-    }
-  }
   footer {
     padding: ptr(20) 0;
     .wrp {
@@ -355,7 +347,19 @@
     .wrp {
       .top {
         .logo {
-          zoom: 0.7;
+          .icon {
+            max-width: ptr(70);
+          }
+          .text {
+            padding-left: ptr(10);
+            span:first-child {
+              font-size: ptr(22);
+              margin-bottom: 0;
+            }
+            span:last-child {
+              font-size: ptr(16);
+            }
+          }
         }
       }
     }
@@ -385,16 +389,19 @@
       .top {
         flex-direction: column;
         .logo {
-          padding-left: 0;
-          padding-right: 0;
+          padding: 0;
+          width: 100%;
+          .icon {
+            max-width: ptr(70);
+          }
           .text {
             padding-left: ptr(10);
             span:first-child {
-              font-size: ptr(25);
+              font-size: ptr(21);
               margin-bottom: 0;
             }
             span:last-child {
-              font-size: ptr(18);
+              font-size: ptr(15);
             }
           }
         }
@@ -578,7 +585,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 320px) {
   :root {
     font-size: 14px;
   }
@@ -589,15 +596,16 @@
     .wrp {
       .top {
         .logo {
+          .icon {
+            max-width: ptr(60);
+          }
           .text {
-            padding-left: ptr(10);
-            margin-bottom: ptr(10);
             span:first-child {
-              font-size: ptr(25);
+              font-size: ptr(18);
               margin-bottom: 0;
             }
             span:last-child {
-              font-size: ptr(20);
+              font-size: ptr(14);
             }
           }
         }

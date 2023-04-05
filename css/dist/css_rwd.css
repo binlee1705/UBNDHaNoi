@@ -294,8 +294,18 @@
     max-width: calc(100vw - 1.25rem);
   }
 
-  header .wrp .top .logo {
-    zoom: 0.7;
+  header .wrp .top .logo .icon {
+    max-width: 4.375rem;
+  }
+  header .wrp .top .logo .text {
+    padding-left: 0.625rem;
+  }
+  header .wrp .top .logo .text span:first-child {
+    font-size: 1.375rem;
+    margin-bottom: 0;
+  }
+  header .wrp .top .logo .text span:last-child {
+    font-size: 1rem;
   }
 
   .commonTitle {
@@ -322,18 +332,21 @@
     flex-direction: column;
   }
   header .wrp .top .logo {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
+    width: 100%;
+  }
+  header .wrp .top .logo .icon {
+    max-width: 4.375rem;
   }
   header .wrp .top .logo .text {
     padding-left: 0.625rem;
   }
   header .wrp .top .logo .text span:first-child {
-    font-size: 1.5625rem;
+    font-size: 1.3125rem;
     margin-bottom: 0;
   }
   header .wrp .top .logo .text span:last-child {
-    font-size: 1.125rem;
+    font-size: 0.9375rem;
   }
   header .wrp .top .right {
     width: 100%;
@@ -483,7 +496,7 @@
     font-size: 1rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 320px) {
   :root {
     font-size: 14px;
   }
@@ -492,15 +505,14 @@
     width: 2.1875rem;
   }
 
-  header .wrp .top .logo .text {
-    padding-left: 0.625rem;
-    margin-bottom: 0.625rem;
+  header .wrp .top .logo .icon {
+    max-width: 3.75rem;
   }
   header .wrp .top .logo .text span:first-child {
-    font-size: 1.5625rem;
+    font-size: 1.125rem;
     margin-bottom: 0;
   }
   header .wrp .top .logo .text span:last-child {
-    font-size: 1.25rem;
+    font-size: 0.875rem;
   }
 }

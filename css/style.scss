@@ -139,9 +139,7 @@ header {
         border-radius: 0 0 ptr(20) ptr(20);
         align-items: center;
         .icon {
-          flex: 1;
           svg {
-            min-width: ptr(90);
             max-width: 100%;
           }
         }
