@@ -1464,13 +1464,16 @@ header .wrp #menu ul li ul ul {
   font-weight: 600;
   border-bottom: 1px solid rgba(40, 115, 170, 0.2);
   padding: 0.625rem 0;
-  height: 4.25rem;
-  overflow: hidden;
   align-items: center;
   gap: 0.625rem;
 }
 #newsHot .wrp .left .list li a > span {
   flex: 1;
+  height: 3rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 #newsHot .wrp .left .list li a:hover {
   color: #2873aa;
@@ -1528,6 +1531,9 @@ header .wrp #menu ul li ul ul {
 }
 #newsHot .wrp .right .info > a:first-child {
   border-top: 1px solid rgba(40, 115, 170, 0.2);
+}
+#newsHot .wrp .right .info > a:first-child > span > * {
+  display: inline-flex;
 }
 #newsHot .wrp .right .info > a:hover {
   color: #2873aa;

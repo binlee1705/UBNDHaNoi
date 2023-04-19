@@ -381,12 +381,15 @@ header {
           font-weight: 600;
           border-bottom: 1px solid rgba(40, 115, 170, 0.2);
           padding: ptr(10) 0;
-          height: ptr(68);
-          overflow: hidden;
           align-items: center;
           gap: ptr(10);
           > span {
             flex: 1;
+            height: ptr(48);
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
           }
           &:hover {
             color: $color-hover;
@@ -444,6 +447,9 @@ header {
           }
           &:first-child {
             border-top: 1px solid rgba(40, 115, 170, 0.2);
+            > span > * {
+              display: inline-flex;
+            }
           }
           &:hover {
             color: $color-hover;
