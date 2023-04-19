@@ -1369,10 +1369,19 @@ header .wrp #menu ul li ul ul {
 }
 
 #newsHot {
-  background: url(../pic/bgNewHot.png) center no-repeat, #e9f0fa;
+  background: #e9f0fa;
   position: relative;
   padding-bottom: 0.625rem;
   margin-bottom: 0.625rem;
+}
+#newsHot::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../pic/bgNewHot.png) center no-repeat;
+  pointer-events: none;
+  mix-blend-mode: color-burn;
 }
 #newsHot .marquee {
   padding-bottom: 1.25rem;
@@ -1404,8 +1413,11 @@ header .wrp #menu ul li ul ul {
 #newsHot .wrp .left .main {
   position: relative;
 }
+#newsHot .wrp .left .main .wImage {
+  height: 22.1875rem;
+}
 #newsHot .wrp .left .main .wImage:before {
-  padding-bottom: 46.8831168831%;
+  padding-bottom: 0;
 }
 #newsHot .wrp .left .main .info {
   pointer-events: none;
@@ -1424,16 +1436,18 @@ header .wrp #menu ul li ul ul {
 }
 #newsHot .wrp .left .main .info .name {
   font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.6875rem;
   display: block;
-  margin-bottom: 0.3125rem;
+  height: 3rem;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 #newsHot .wrp .left .main .info .name:hover {
   color: #fff;
 }
 #newsHot .wrp .left .main .info .des {
+  margin-top: 0.1875rem;
   text-align: justify;
+  display: none;
 }
 #newsHot .wrp .left .list {
   margin: 0;
@@ -1446,6 +1460,9 @@ header .wrp #menu ul li ul ul {
   font-weight: 600;
   border-bottom: 1px solid rgba(40, 115, 170, 0.2);
   padding: 0.625rem 0;
+  height: 4.25rem;
+  overflow: hidden;
+  align-items: center;
   gap: 0.625rem;
 }
 #newsHot .wrp .left .list li a > span {
@@ -1459,13 +1476,16 @@ header .wrp #menu ul li ul ul {
 }
 #newsHot .wrp .right {
   flex: 1;
-  padding-left: 0.625rem;
+  padding-left: 1.875rem;
 }
 #newsHot .wrp .right .main {
   position: relative;
 }
+#newsHot .wrp .right .main .wImage {
+  height: 22.1875rem;
+}
 #newsHot .wrp .right .main .wImage:before {
-  padding-bottom: 95.1351351351%;
+  padding-bottom: 0;
 }
 #newsHot .wrp .right .main .text {
   pointer-events: none;
@@ -1479,6 +1499,9 @@ header .wrp #menu ul li ul ul {
   color: #fff;
   padding: 0.625rem 1.25rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 #newsHot .wrp .right .info {
   background: #fff;

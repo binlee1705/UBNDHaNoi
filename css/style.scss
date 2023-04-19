@@ -294,7 +294,16 @@ header {
   }
 }
 #newsHot {
-  background: url(../pic/bgNewHot.png) center no-repeat, #e9f0fa;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../pic/bgNewHot.png) center no-repeat;
+    pointer-events: none;
+    mix-blend-mode: color-burn;
+  }
+  background: #e9f0fa;
   position: relative;
   padding-bottom: ptr(10);
   margin-bottom: ptr(10);
@@ -326,8 +335,9 @@ header {
       .main {
         position: relative;
         .wImage {
+          height: ptr(355);
           &:before {
-            padding-bottom: wImage(361, 770);
+            padding-bottom: 0;
           }
         }
         .info {
@@ -346,16 +356,18 @@ header {
           }
           .name {
             font-weight: 700;
-            font-size: ptr(18);
-            line-height: ptr(27);
             display: block;
-            margin-bottom: ptr(5);
+            height: ptr(48);
+            overflow: hidden;
+            box-sizing: border-box;
             &:hover {
               color: #fff;
             }
           }
           .des {
+            margin-top: ptr(3);
             text-align: justify;
+            display: none;
           }
         }
       }
@@ -369,6 +381,9 @@ header {
           font-weight: 600;
           border-bottom: 1px solid rgba(40, 115, 170, 0.2);
           padding: ptr(10) 0;
+          height: ptr(68);
+          overflow: hidden;
+          align-items: center;
           gap: ptr(10);
           > span {
             flex: 1;
@@ -384,12 +399,13 @@ header {
     }
     .right {
       flex: 1;
-      padding-left: ptr(10);
+      padding-left: ptr(30);
       .main {
         position: relative;
         .wImage {
+          height: ptr(355);
           &:before {
-            padding-bottom: wImage(352, 370);
+            padding-bottom: 0;
           }
         }
         .text {
@@ -404,6 +420,9 @@ header {
           color: #fff;
           padding: ptr(10) ptr(20);
           text-align: center;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
         }
       }
       .info {
